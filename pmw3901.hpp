@@ -29,6 +29,7 @@ public:
 
     void pmw3901_calculate_velocity_direct(int16_t delta_x, int16_t delta_y,
                                        float altitude, float dt,
+                                        float *x_flow, float *y_flow,
                                        float *velocity_x, float *velocity_y);
 private:
     spi_inst_t* _spi;

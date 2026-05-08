@@ -83,8 +83,10 @@ float flip_p_ref=0 ,flip_q_ref=0, flip_r_ref=0;
 float v_left=0, v_right=0;
 
 //flow data
-float vx, vy;
+float vx=0.0, vy=0.0;
 const float dt = 0.01;
+float Fx=0.0,Fy=0.0;
+float x_flow=0.0,y_flow=0.0;
 
 // Sensor data
 float Ax, Ay, Az, Wp, Wq, Wr, Mx, My, Mz, Mx0, My0, Mz0, Mx_ave, My_ave, Mz_ave;
@@ -176,6 +178,9 @@ PID psi_pid;
 PID u_pid;
 PID v_pid;
 PID y_pid;
+PID x_pid;
+PID vx_pid;
+PID vy_pid;
 
 Filter Range_filter;
 Filter Angle_filter;
@@ -217,7 +222,8 @@ void landing_merker(void);
 void send_data_via_uart(void);
 void receiveData(char c);
 void flow_sensor(void);
-
+void position_pid(void);
+void velocity_pid(void);
 
 #define AVERAGE 2000
 #define KALMANWAIT 6000
@@ -526,6 +532,11 @@ void control_init(void)
   // Linetrace
   // velocity control
   v_pid.set_parameter(0.00025, 100000, 0.01, 0.125, 0.03); // 0.0002,100000,0.01
+
+  x_pid.set_parameter(0.000, 100000, 0.0, 0.125, 0.03);
+  y_pid.set_parameter(0.000, 100000, 0.0, 0.125, 0.03);
+  vx_pid.set_parameter(0.000, 100000, 0.0, 0.125, 0.03);
+  vy_pid.set_parameter(0.000, 100000, 0.0, 0.125, 0.03);
 }
 
 uint8_t lock_com(void)
@@ -691,25 +702,6 @@ float lotate_altitude(float l_distance)
   // printf("%9.6f %9.6f %9.6f %9.6f %9.6f %9.6f %d %9.6f\n",mu_Yn_est(1,0),ideal,T_ref,T_stick,input,flying_mode,count_up,auto_mode_count);
 // }
 
-void servo_control(void)
-{ 
-  // if (Chdata[SERVO] > (SERVO_MAX + SERVO_MIN) / 2 && Flight_mode == NORMAL)
-  //   payload_relese();
-  // if (Chdata[SERVO] < (SERVO_MAX + SERVO_MIN) / 2 && Flight_mode == NORMAL)
-  //   payload_hook();
-  // if (Flight_mode == NORMAL){
-  //   if (Chdata[SERVO] > (SERVO_MAX + SERVO_MIN) / 2 && Flight_mode == NORMAL)
-  //     payload_relese();
-  //   if (Chdata[SERVO] < (SERVO_MAX + SERVO_MIN) / 2 && Flight_mode == NORMAL)
-  //     payload_hook();
-  // }
-  // else if(Flight_mode == REDCIRCLE){
-  //   if (Chdata[SERVO] > (SERVO_MAX + SERVO_MIN) / 2)
-  //     payload_relese();
-  //   // if (Chdata[SERVO] < (SERVO_MAX + SERVO_MIN) / 2 && )
-  //   //   payload_hook();
-  // }
-}
 
 void rate_control(void)
 {
@@ -745,38 +737,6 @@ void rate_control(void)
     Red_flag = 0;
   }
 
-  // else if ((Chdata[SERVO] < 200) && (Chdata[REDCIRCLE] < 200) && (Chdata[LINETRACE] > 500) && (Chdata[ROCKING] < 200) && i2c_connect == 1)
-  // {
-    // Flight_mode = LINETRACE;
-    // Red_flag = 0;
-    // Rocking_timer = 0.0;
-  // }
-  // 赤丸検知モード
-  // else if ((Chdata[REDCIRCLE] > 500) && (Chdata[LOG] < 200) && (Chdata[HOVERING] < 200) && i2c_connect == 1)
-  // {
-  //   Flight_mode = REDCIRCLE;
-  //   release_flag = 0;
-  //   Rocking_timer = 0.0;
-  // }
-
-
-  // else if ((Chdata[SERVO] < 200) && (Chdata[REDCIRCLE] > 500) && (Chdata[LOG] < 200) && (Chdata[LINETRACE] < 200) && (Chdata[ROCKING] < 200))
-  // {
-  //   Flight_mode = REDCIRCLE;
-  //   release_flag = 0;
-  //   Rocking_timer = 0.0;
-  // }
-
-  // else if ((Chdata[SERVO] > 500) && (Chdata[REDCIRCLE] < 200) && (Chdata[LOG] < 200) && (Chdata[LINETRACE] < 200) && (Chdata[ROCKING] < 200))
-  // {
-  //   Flight_mode = SERVO;
-  //   Rocking_timer = 0.0;
-  // }
-
-  // Get Bias
-  // Pbias = Xe(4, 0);
-  // Qbias = Xe(5, 0);
-  // Rbias = Xe(6, 0);
   
   // Control angle velocity
   
@@ -1872,15 +1832,14 @@ void kalman_filter(void)
   ekf(Xp, Xe, P, Z, Omega_m, Q, R, G * dt, Beta, dt);
 }
 
+////////////////////////力の計算式///////////////////////////////
 void flow_sensor(void){
 
-
-    int16_t dx, dy;
-    float vx, vy;
+int16_t dx,dy=0;
 
     if (flow->readMotionBurst(&dx, &dy)) {
 
-        flow->pmw3901_calculate_velocity_direct(dx, dy, Kalman_alt, dt, &vx, &vy);
+        flow->pmw3901_calculate_velocity_direct(dx, dy, Kalman_alt, dt,&x_flow,&y_flow ,&vx, &vy);
 
         static int cnt = 0;
     if (++cnt % 10 == 0) {
@@ -1888,4 +1847,8 @@ void flow_sensor(void){
          dx, dy, Kalman_alt/1000, dt, vx, vy);        
       }
     }
+}
+
+void position_pid(void){
+    float 
 }

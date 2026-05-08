@@ -523,6 +523,7 @@ bool PMW3901::readMotionBurst(int16_t *dx, int16_t *dy)
 
 void PMW3901::pmw3901_calculate_velocity_direct(int16_t delta_x, int16_t delta_y,
                                        float altitude, float dt,
+                                        float *x_flow, float *y_flow,
                                        float *velocity_x, float *velocity_y)
 {
     if (velocity_x == NULL || velocity_y == NULL || dt <= 0.0f) {
@@ -534,6 +535,11 @@ void PMW3901::pmw3901_calculate_velocity_direct(int16_t delta_x, int16_t delta_y
     const float scale_factor = 0.0254f / 11.914f;
 
     //高度がmmのため1000で割る
+    *x_flow= -(scale_factor * (float)delta_x * altitude) / 1000;
+    *y_flow= -(scale_factor * (float)delta_y * altitude) / 1000;
+
     *velocity_x = -(scale_factor * (float)delta_x * altitude) / dt / 1000;
     *velocity_y = -(scale_factor * (float)delta_y * altitude) / dt / 1000;
+
 }
+
