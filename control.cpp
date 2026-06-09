@@ -483,6 +483,7 @@ void loop_400Hz(void)
       led = !led;
     }
   }
+
   E_time = time_us_32();
   D_time = E_time - S_time;
 
@@ -496,26 +497,22 @@ void control_init(void)
   Angle_filter.set_parameter(0.08, 0.025);
   Velocity_filter.set_parameter(0.08, 0.025);
 
-
-  // Rate control
-  p_pid.set_parameter(0.032, 1000.0, 0.0125, 0.125, 0.0025); //ikaring(2.2, 5, 0.01) itocopter(2.5, 100, 0.009)
-  q_pid.set_parameter(0.032, 1000.0, 0.0125, 0.125, 0.0025); //ikaring(1.5, 1, 0.01) itocopter(2.5, 100, 0.009)
+  //rate_control
+  p_pid.set_parameter(0.05, 1000.0, 0.0125, 0.125, 0.0025); //ikaring(2.2, 5, 0.01) itocopter(2.5, 100, 0.009)
+  q_pid.set_parameter(0.05, 1000.0, 0.0125, 0.125, 0.0025); //ikaring(1.5, 1, 0.01) itocopter(2.5, 100, 0.009)
   r_pid.set_parameter(0.21, 10000.0, 0.01, 0.125, 0.0025);  //ikaring(3.1, 1, 0.01) itocopter(3.5, 10, 0.009)
   // Angle control
   phi_pid.set_parameter(2.1, 1000.0, 0.013, 0.125, 0.01);   // 6.0  8.0,20,0.007      //1
   theta_pid.set_parameter(2.1, 1000.0, 0.013, 0.125, 0.01); // 6.0  8.0,20,0.007 // 1.6      
   psi_pid.set_parameter(0, 1000, 0, 0, 0.01);     //0 1000 0.01
+   
   
-  // Linetrace
-  // velocity control
-  v_pid.set_parameter(0.00025, 100000, 0.01, 0.125, 0.03); // 0.0002,100000,0.01
-
   //location control
-  x_pid.set_parameter(0.0001, 100000, 0.0, 0.125, 0.03);
-  y_pid.set_parameter(0.0001, 100000, 0.0, 0.125, 0.03);
+  x_pid.set_parameter(0.01, 10000, 0.0, 0.125, 0.03);
+  y_pid.set_parameter(0.01, 10000, 0.0, 0.125, 0.03);
   //velocity control
-  vx_pid.set_parameter(0.0001, 100000, 0.0, 0.125, 0.03);
-  vy_pid.set_parameter(0.0001, 100000, 0.0, 0.125, 0.03);
+  vx_pid.set_parameter(0.01, 100000, 0.0, 0.125, 0.03);
+  vy_pid.set_parameter(0.01, 100000, 0.0, 0.125, 0.03);
 }
 
 uint8_t lock_com(void)
@@ -667,7 +664,7 @@ void rate_control(void)
     differential = 0;
     differential_v = 0;
 
-    T_ref = (float)(Chdata[2]-CH3MIN)/(CH3MAX-CH3MIN);
+    T_ref = 20*(float)(Chdata[2]-CH3MIN)/(CH3MAX-CH3MIN);
 
     }
 
@@ -734,17 +731,38 @@ void rate_control(void)
     Vey_com = -3.7;
   }
   // Motor Control(mixing)
+  
 
 
+float FR_th = (-0.5176*Vex_com +1.9319*Vey_com +0.1387*T_ref )
+             +( 1.5789*P_com -2.4904*Q_com +5.8959*R_com);
 
-  float FR_duty = (-0.2241*Vex_com +0.1294*Vey_com +T_ref )+( 0.2821*P_com -0.2298*Q_com -0.939*R_com);
-  float MR_duty = ( 0.2588*Vex_com +0     *Vey_com +T_ref )+( 0.3747*P_com -0     *Q_com +0.939*R_com);
-  float RR_duty = (-0.2241*Vex_com -0.1294*Vey_com +T_ref )+( 0.2821*P_com +0.2298*Q_com -0.939*R_com);
-  float RL_duty = (-0.2241*Vex_com +0.1294*Vey_com +T_ref )+(-0.2821*P_com +0.2298*Q_com +0.939*R_com);
-  float ML_duty = ( 0.2588*Vex_com +0     *Vey_com +T_ref )+(-0.3747*P_com -0     *Q_com -0.939*R_com);
-  float FL_duty = (-0.2241*Vex_com -0.1294*Vey_com +T_ref )+(-0.2821*P_com -0.2298*Q_com +0.939*R_com);
+float MR_th = ( 1.0353*Vex_com +0.0*Vey_com +0.2402*T_ref )
+              +( 2.7345*P_com -0.0*Q_com -5.8960*R_com);
 
+float RR_th = (-0.5176*Vex_com -1.9319*Vey_com +0.1387*T_ref )
+              +( 1.5789*P_com +2.4904*Q_com +5.8959*R_com);
 
+float RL_th = (-0.5176*Vex_com +1.9319*Vey_com +0.1387*T_ref )
+              +(-1.5789*P_com +2.4904*Q_com -5.8959*R_com);
+
+float ML_th = ( 1.0353*Vex_com +0.0*Vey_com +0.2402*T_ref )
+              +(-2.7345*P_com +0.0*Q_com +5.8960*R_com);
+
+float FL_th = (-0.5176*Vex_com -1.9319*Vey_com +0.1387*T_ref )
+              +(-1.5789*P_com -2.4904*Q_com -5.8959*R_com);
+
+//スケーリング
+const float K_th = 0.00037;
+
+FR_duty = K_th * std::sqrt(FR_th*1513317);
+MR_duty = K_th * std::sqrt(MR_th*1513317);
+RR_duty = K_th * std::sqrt(RR_th*1513317);
+RL_duty = K_th * std::sqrt(RL_th*1513317);
+ML_duty = K_th * std::sqrt(ML_th*1513317);
+FL_duty = K_th * std::sqrt(FL_th*1513317);
+
+//duty調整
   float minimum_duty = 0.1;
   const float maximum_duty = 0.95;
   minimum_duty = Disable_duty;
@@ -812,10 +830,10 @@ void rate_control(void)
       set_duty_rl(RL_duty);
      }
 
+
     else
       motor_stop();
-    // printf("%12.5f %12.5f %12.5f\n",p_rate, q_rate, r_rate);
-  }
+      }
 
   // printf("\n");
 
@@ -866,14 +884,12 @@ void angle_control(void)
 
     // Get angle ref (manual flight)
 
-      Pos_x_ref_trim =0 ;
       Pos_x_ref = Pos_x_ref_trim+ 0.5 * M_PI * (float)(Chdata[3] - (CH4MAX + CH4MIN) * 0.5) * 2 / (CH4MAX - CH4MIN);
-      Pos_y_ref_trim =0;
       Pos_y_ref= Pos_y_ref_trim + 0.5 * M_PI * (float)(Chdata[1] - (CH2MAX + CH2MIN) * 0.5) * 2 / (CH2MAX - CH2MIN);
       Psi_ref = 0.8 * M_PI * (float)(Chdata[0] - (CH1MAX + CH1MIN) * 0.5) * 2 / (CH1MAX - CH1MIN);
       Psi = 0.0;
       // Linetrace_counter = 0;
-      psi_pid.set_parameter(0, 100000, 0.01, 0.125, 0.01);
+      //psi_pid.set_parameter(0, 100000, 0.01, 0.125, 0.01);
       // auto_mode_count = 1;
       Range_filter.reset();
       Angle_filter.reset();
@@ -984,6 +1000,7 @@ void angle_control(void)
 
     E_time2 = time_us_32();
     D_time2 = E_time2 - S_time2;
+
     
   }
 }
@@ -1057,24 +1074,24 @@ void logging(void)
       Logdata[LogdataCounter++] = T_stick;   // m_filter_output;  //32
       Logdata[LogdataCounter++] = input; // m_filter_output;//33
       
-      Logdata[LogdataCounter++] = vx;
-      Logdata[LogdataCounter++] = vy;
+      Logdata[LogdataCounter++] = vx;     //34
+      Logdata[LogdataCounter++] = vy;     //35
 
-      Logdata[LogdataCounter++] = x_flow;
-      Logdata[LogdataCounter++] = y_flow;
+      Logdata[LogdataCounter++] = x_flow;//36
+      Logdata[LogdataCounter++] = y_flow;//37
 
-      Logdata[LogdataCounter++] = PoX_ref;
-      Logdata[LogdataCounter++] = PoY_ref;
+      Logdata[LogdataCounter++] = PoX_ref;//38
+      Logdata[LogdataCounter++] = PoY_ref;//39
 
-      Logdata[LogdataCounter++] = Vex_com;
-      Logdata[LogdataCounter++] = Vey_com;
+      Logdata[LogdataCounter++] = Pos_x_ref;//40
+      Logdata[LogdataCounter++] = Pos_y_ref;//41
 
-      Logdata[LogdataCounter++] = FR_duty;
-      Logdata[LogdataCounter++] = FL_duty;
-      Logdata[LogdataCounter++] = MR_duty;
-      Logdata[LogdataCounter++] = ML_duty;
-      Logdata[LogdataCounter++] = RR_duty;
-      Logdata[LogdataCounter++] = RL_duty;
+      Logdata[LogdataCounter++] = FR_duty;//42
+      Logdata[LogdataCounter++] = MR_duty;//43    
+      Logdata[LogdataCounter++] = RR_duty;//44      
+      Logdata[LogdataCounter++] = RL_duty;//45
+      Logdata[LogdataCounter++] = ML_duty;//46     
+      Logdata[LogdataCounter++] = FL_duty;//47
 
     }
     else
@@ -1092,7 +1109,7 @@ void logging(void)
 
 void log_output(void)
 {
-  if (LogdataCounter == 0)
+  if(LogdataCounter==0)
   {
     printPQR();
     printf("#Roll rate PID gain\n");
@@ -1106,25 +1123,25 @@ void log_output(void)
     printf("#Pitch angle PID gain\n");
     theta_pid.printGain();
   }
-  if (LogdataCounter + DATANUM < LOGDATANUM)
+  if(LogdataCounter+DATANUM<LOGDATANUM)
   {
-    // LockMode=0;
-    printf("%10.2f ", Log_time);
-    Log_time = Log_time + 0.01;
-    for (uint8_t i = 0; i < DATANUM; i++)
+    //LockMode=0;
+    //printf("%10.2f ", Log_time);
+    Log_time=Log_time + 0.01;
+    for (uint8_t i=0;i<DATANUM;i++)
     {
-      printf("%12.5f", Logdata[LogdataCounter + i]);
+      printf("%12.5f",Logdata[LogdataCounter+i]);
     }
     printf("\n");
-    LogdataCounter = LogdataCounter + DATANUM;
+    LogdataCounter=LogdataCounter + DATANUM;
   }
-  else
+  else 
   {
-    Arm_flag = 3;
-    Logoutputflag = 0;
-    LockMode = 0;
-    Log_time = 0.0;
-    LogdataCounter = 0;
+    Arm_flag=3;
+    Logoutputflag=0;
+    LockMode=0;
+    Log_time=0.0;
+    LogdataCounter=0;
   }
 }
 
@@ -1391,7 +1408,7 @@ void kalman_filter(void)
 ////////////////////////力の計算式///////////////////////////////
 void flow_sensor(void){
 
-int16_t dx,dy=0;
+int16_t dx=0,dy=0;
 
     if (flow->readMotionBurst(&dx, &dy)) {
 
