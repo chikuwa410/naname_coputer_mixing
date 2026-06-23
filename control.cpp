@@ -498,14 +498,13 @@ void control_init(void)
   Velocity_filter.set_parameter(0.08, 0.025);
 
   //rate_control
-  p_pid.set_parameter(0.05, 1000.0, 0.0125, 0.125, 0.0025); //ikaring(2.2, 5, 0.01) itocopter(2.5, 100, 0.009)
-  q_pid.set_parameter(0.05, 1000.0, 0.0125, 0.125, 0.0025); //ikaring(1.5, 1, 0.01) itocopter(2.5, 100, 0.009)
-  r_pid.set_parameter(0.21, 10000.0, 0.01, 0.125, 0.0025);  //ikaring(3.1, 1, 0.01) itocopter(3.5, 10, 0.009)
-  // Angle control
-  phi_pid.set_parameter(2.1, 1000.0, 0.013, 0.125, 0.01);   // 6.0  8.0,20,0.007      //1
-  theta_pid.set_parameter(2.1, 1000.0, 0.013, 0.125, 0.01); // 6.0  8.0,20,0.007 // 1.6      
-  psi_pid.set_parameter(0, 1000, 0, 0, 0.01);     //0 1000 0.01
-   
+  p_pid.set_parameter( 0.1, 100000, 0.0, 0.125, 0.0025);//3.4
+  q_pid.set_parameter( 0.1, 100000, 0.0, 0.125, 0.0025);//3.8
+  r_pid.set_parameter( 0.1, 1000000, 0.0, 0.125, 0.0025);//9.4
+  //Angle control
+  phi_pid.set_parameter  ( 2.1, 1000, 0.013, 0.125, 0.01);//6.0
+  theta_pid.set_parameter( 2.1, 1000, 0.013, 0.125, 0.01);//6.0
+  psi_pid.set_parameter  ( 0.0, 1000, 0.0, 0, 0.01);
   
   //location control
   x_pid.set_parameter(0.01, 10000, 0.0, 0.125, 0.03);
@@ -683,7 +682,7 @@ void rate_control(void)
   Q_com = q_pid.update(q_err);
   R_com = r_pid.update(r_err);
   Vex_com = vx_pid.update(vex_err);
-  Vey_com = vy_pid.update(vey_err);
+  Vey_com= vy_pid.update(vey_err);
 
   // saturation P_com
   if (P_com >= 3.7)
@@ -732,28 +731,60 @@ void rate_control(void)
   }
   // Motor Control(mixing)
   
+  //フィードバックなし
+  float Pos_x_com2 = Pos_x_ref_trim+  1* (float)(Chdata[3] - (CH4MAX + CH4MIN) * 0.5) * 2 / (CH4MAX - CH4MIN);
+  float Pos_y_com2= Pos_y_ref_trim +  1* (float)(Chdata[1] - (CH2MAX + CH2MIN) * 0.5) * 2 / (CH2MAX - CH2MIN);
 
+//フィードバックあり  
+// float FR_th = ( 0.6440*Vex_com -1.1153*Vey_com +0.1725*T_ref )
+//              +(-1.4379*P_com +2.4904*Q_com -5.3690*R_com);
 
-float FR_th = (-0.5176*Vex_com +1.9319*Vey_com +0.1387*T_ref )
-             +( 1.5789*P_com -2.4904*Q_com +5.8959*R_com);
+// float MR_th = (-1.2879*Vex_com +0.0*Vey_com     +0.1725*T_ref )
+//               +(-2.8757*P_com -0.0*Q_com +5.3690*R_com);
 
-float MR_th = ( 1.0353*Vex_com +0.0*Vey_com +0.2402*T_ref )
-              +( 2.7345*P_com -0.0*Q_com -5.8960*R_com);
+// float RR_th = ( 0.6440*Vex_com +1.1153*Vey_com +0.1725*T_ref )
+//               +(-1.4379*P_com -2.4904*Q_com -5.3690*R_com);
 
-float RR_th = (-0.5176*Vex_com -1.9319*Vey_com +0.1387*T_ref )
-              +( 1.5789*P_com +2.4904*Q_com +5.8959*R_com);
+// float RL_th = ( 0.6440*Vex_com -1.1153*Vey_com +0.1725*T_ref )
+//               +( 1.4379*P_com -2.4904*Q_com +5.3690*R_com);
 
-float RL_th = (-0.5176*Vex_com +1.9319*Vey_com +0.1387*T_ref )
-              +(-1.5789*P_com +2.4904*Q_com -5.8959*R_com);
+// float ML_th = (-1.2879*Vex_com +0.0*Vey_com +0.1725*T_ref )
+//               +( 2.8757*P_com +0.0*Q_com -5.3690*R_com);
 
-float ML_th = ( 1.0353*Vex_com +0.0*Vey_com +0.2402*T_ref )
-              +(-2.7345*P_com +0.0*Q_com +5.8960*R_com);
+// float FL_th = ( 0.6440*Vex_com +1.1153*Vey_com +0.1725*T_ref )
+//               +( 1.4379*P_com +2.4904*Q_com +5.3690*R_com);
 
-float FL_th = (-0.5176*Vex_com -1.9319*Vey_com +0.1387*T_ref )
-              +(-1.5789*P_com -2.4904*Q_com -5.8959*R_com);
+//フィードバックなし  
+float FR_th = ( 0.6440*Pos_x_com2 -1.1153*Pos_y_com2 +0.1725*T_ref )
+             +(-1.4379*P_com +2.4904*Q_com -5.3690*R_com);
+
+float MR_th = (-1.2879*Pos_x_com2 +0.0*Pos_y_com2     +0.1725*T_ref )
+              +(-2.8757*P_com -0.0*Q_com +5.3690*R_com);
+
+float RR_th = ( 0.6440*Pos_x_com2 +1.1153*Pos_y_com2 +0.1725*T_ref )
+              +(-1.4379*P_com -2.4904*Q_com -5.3690*R_com);
+
+float RL_th = ( 0.6440*Pos_x_com2 -1.1153*Pos_y_com2 +0.1725*T_ref )
+              +( 1.4379*P_com -2.4904*Q_com +5.3690*R_com);
+
+float ML_th = (-1.2879*Pos_x_com2 +0.0*Pos_y_com2 +0.1725*T_ref )
+              +( 2.8757*P_com +0.0*Q_com -5.3690*R_com);
+
+float FL_th = ( 0.6440*Pos_x_com2 +1.1153*Pos_y_com2 +0.1725*T_ref )
+              +( 1.4379*P_com +2.4904*Q_com +5.3690*R_com);
 
 //スケーリング
 const float K_th = 0.00037;
+
+
+//max
+FR_th = std::max(0.0f, FR_th);
+MR_th = std::max(0.0f, MR_th);
+RR_th = std::max(0.0f, RR_th);
+RL_th = std::max(0.0f, RL_th);
+ML_th = std::max(0.0f, ML_th);
+FL_th = std::max(0.0f, FL_th);
+
 
 FR_duty = K_th * std::sqrt(FR_th*1513317);
 MR_duty = K_th * std::sqrt(MR_th*1513317);
@@ -761,6 +792,7 @@ RR_duty = K_th * std::sqrt(RR_th*1513317);
 RL_duty = K_th * std::sqrt(RL_th*1513317);
 ML_duty = K_th * std::sqrt(ML_th*1513317);
 FL_duty = K_th * std::sqrt(FL_th*1513317);
+
 
 //duty調整
   float minimum_duty = 0.1;
@@ -884,8 +916,8 @@ void angle_control(void)
 
     // Get angle ref (manual flight)
 
-      Pos_x_ref = Pos_x_ref_trim+ 0.5 * M_PI * (float)(Chdata[3] - (CH4MAX + CH4MIN) * 0.5) * 2 / (CH4MAX - CH4MIN);
-      Pos_y_ref= Pos_y_ref_trim + 0.5 * M_PI * (float)(Chdata[1] - (CH2MAX + CH2MIN) * 0.5) * 2 / (CH2MAX - CH2MIN);
+      Pos_x_ref = Pos_x_ref_trim+ 2 * (float)(Chdata[3] - (CH4MAX + CH4MIN) * 0.5) * 2 / (CH4MAX - CH4MIN);
+      Pos_y_ref= Pos_y_ref_trim + 2 * (float)(Chdata[1] - (CH2MAX + CH2MIN) * 0.5) * 2 / (CH2MAX - CH2MIN);
       Psi_ref = 0.8 * M_PI * (float)(Chdata[0] - (CH1MAX + CH1MIN) * 0.5) * 2 / (CH1MAX - CH1MIN);
       Psi = 0.0;
       // Linetrace_counter = 0;
@@ -1265,7 +1297,6 @@ void sensor_read(void)
         lotated_distance = lotate_altitude(distance);
         Kalman_alt = Kalman_PID(lotated_distance, z_acc);
         altitude = mu_Yn_est(1,0);
-        
 
         }
       }
