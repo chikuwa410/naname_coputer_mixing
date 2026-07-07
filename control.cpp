@@ -268,7 +268,8 @@ void led_control(void)
 // This function is called from PWM Intrupt on 400Hz.
 void loop_400Hz(void)
 {
-  
+    
+
 
 
   static uint8_t led = 1;
@@ -731,45 +732,45 @@ void rate_control(void)
     Vey_com = -3.7;
   }
   // Motor Control(mixing)
-  
-  
-//フィードバックあり  
-float FR_th = ( 0.6440*Vex_com -1.1153*Vey_com +0.1725*T_ref )
-             +(-1.4379*P_com +2.4904*Q_com -5.3690*R_com);
-
-float MR_th = (-1.2879*Vex_com +0.0*Vey_com     +0.1725*T_ref )
-              +(-2.8757*P_com -0.0*Q_com +5.3690*R_com);
-
-float RR_th = ( 0.6440*Vex_com +1.1153*Vey_com +0.1725*T_ref )
-              +(-1.4379*P_com -2.4904*Q_com -5.3690*R_com);
-
-float RL_th = ( 0.6440*Vex_com -1.1153*Vey_com +0.1725*T_ref )
-              +( 1.4379*P_com -2.4904*Q_com +5.3690*R_com);
-
-float ML_th = (-1.2879*Vex_com +0.0*Vey_com +0.1725*T_ref )
-              +( 2.8757*P_com +0.0*Q_com -5.3690*R_com);
-
-float FL_th = ( 0.6440*Vex_com +1.1153*Vey_com +0.1725*T_ref )
-              +( 1.4379*P_com +2.4904*Q_com +5.3690*R_com);
-
-// //フィードバックなし  
-// float FR_th = ( 0.6440*Pos_x_com2 -1.1153*Pos_y_com2 +0.1725*T_ref )
+  float Pos_y_com2 =  10* (float)(Chdata[3] - (CH4MAX + CH4MIN) * 0.5) * 2 / (CH4MAX - CH4MIN);
+  float Pos_x_com2=   10* (float)(Chdata[1] - (CH2MAX + CH2MIN) * 0.5) * 2 / (CH2MAX - CH2MIN);
+// //フィードバックあり  
+// float FR_th = ( 0.6440*Vex_com -1.1153*Vey_com +0.1725*T_ref )
 //              +(-1.4379*P_com +2.4904*Q_com -5.3690*R_com);
 
-// float MR_th = (-1.2879*Pos_x_com2 +0.0*Pos_y_com2     +0.1725*T_ref )
+// float MR_th = (-1.2879*Vex_com +0.0*Vey_com     +0.1725*T_ref )
 //               +(-2.8757*P_com -0.0*Q_com +5.3690*R_com);
 
-// float RR_th = ( 0.6440*Pos_x_com2 +1.1153*Pos_y_com2 +0.1725*T_ref )
+// float RR_th = ( 0.6440*Vex_com +1.1153*Vey_com +0.1725*T_ref )
 //               +(-1.4379*P_com -2.4904*Q_com -5.3690*R_com);
 
-// float RL_th = ( 0.6440*Pos_x_com2 -1.1153*Pos_y_com2 +0.1725*T_ref )
+// float RL_th = ( 0.6440*Vex_com -1.1153*Vey_com +0.1725*T_ref )
 //               +( 1.4379*P_com -2.4904*Q_com +5.3690*R_com);
 
-// float ML_th = (-1.2879*Pos_x_com2 +0.0*Pos_y_com2 +0.1725*T_ref )
+// float ML_th = (-1.2879*Vex_com +0.0*Vey_com +0.1725*T_ref )
 //               +( 2.8757*P_com +0.0*Q_com -5.3690*R_com);
 
-// float FL_th = ( 0.6440*Pos_x_com2 +1.1153*Pos_y_com2 +0.1725*T_ref )
+// float FL_th = ( 0.6440*Vex_com +1.1153*Vey_com +0.1725*T_ref )
 //               +( 1.4379*P_com +2.4904*Q_com +5.3690*R_com);
+
+//フィードバックなし  
+float FR_th = ( 0.6440*Pos_x_com2 -1.1153*Pos_y_com2 +0.1725*T_ref )
+             +(-1.4379*P_com +2.4904*Q_com -5.3690*R_com);
+
+float MR_th = (-1.2879*Pos_x_com2 +0.0*Pos_y_com2     +0.1725*T_ref )
+              +(-2.8757*P_com -0.0*Q_com +5.3690*R_com);
+
+float RR_th = ( 0.6440*Pos_x_com2 +1.1153*Pos_y_com2 +0.1725*T_ref )
+              +(-1.4379*P_com -2.4904*Q_com -5.3690*R_com);
+
+float RL_th = ( 0.6440*Pos_x_com2 -1.1153*Pos_y_com2 +0.1725*T_ref )
+              +( 1.4379*P_com -2.4904*Q_com +5.3690*R_com);
+
+float ML_th = (-1.2879*Pos_x_com2 +0.0*Pos_y_com2 +0.1725*T_ref )
+              +( 2.8757*P_com +0.0*Q_com -5.3690*R_com);
+
+float FL_th = ( 0.6440*Pos_x_com2 +1.1153*Pos_y_com2 +0.1725*T_ref )
+              +( 1.4379*P_com +2.4904*Q_com +5.3690*R_com);
 
 //スケーリング
 const float K_th = 0.00037;
@@ -884,7 +885,6 @@ extern PMW3901* flow;
 void angle_control(void)
 {
 
-
   float phi_err, theta_err, psi_err;
   float q0, q1, q2, q3;
   float e23, e33, e13, e11, e12;
@@ -913,10 +913,16 @@ void angle_control(void)
     Psi = Xn_est_3;
 
     // Get angle ref (manual flight)
-      float Phi_trim =0;//-4*M_PI/180.0; 
+    if(Chdata[REDCIRCLE]>500)  {
+      Pos_y_ref =  5* (float)(Chdata[3] - (CH4MAX + CH4MIN) * 0.5) * 2 / (CH4MAX - CH4MIN);
+      Pos_x_ref =  5* (float)(Chdata[1] - (CH2MAX + CH2MIN) * 0.5) * 2 / (CH2MAX - CH2MIN);
+    }
+    else{
+      float Phi_trim =-9*M_PI/180.0;//-4*M_PI/180.0; 
       Phi_ref = Phi_trim + 0.8 * M_PI * (float)(Chdata[3] - (CH4MAX + CH4MIN) * 0.5) * 2 / (CH4MAX - CH4MIN);
-      float Theta_trim = 0;//2.5*M_PI/180;//-10*M_PI/180.0;
+      float Theta_trim = 3;//3*M_PI/180;//-10*M_PI/180.0;
       Theta_ref = Theta_trim +  M_PI * (float)(Chdata[1] - (CH2MAX + CH2MIN) * 0.5) * 2 / (CH2MAX - CH2MIN);
+    }
       Psi_trim = 0;
       Psi_ref = Psi_trim +  M_PI * (float)(Chdata[0] - (CH1MAX + CH1MIN) * 0.5) * 2 / (CH1MAX - CH1MIN);
       Psi = 0.0;
