@@ -500,14 +500,22 @@ void control_init(void)
 
   //rate_control
 
-  p_pid.set_parameter( 0.6, 10000, 0.0038, 0.125, 0.0025);//3.4
-  q_pid.set_parameter( 0.6, 10000, 0.0045, 0.125, 0.0025);//3.8
-  r_pid.set_parameter( 0.3, 100000, 0.0056, 0.125, 0.0025);//9.4
+  // p_pid.set_parameter( 0.6, 10000, 0.0038, 0.125, 0.0025);//3.4
+  // q_pid.set_parameter( 0.6, 10000, 0.0045, 0.125, 0.0025);//3.8
+  // r_pid.set_parameter( 0.3, 100000, 0.0056, 0.125, 0.0025);//9.4
+  // //Angle control
+  // phi_pid.set_parameter  ( 5.0, 1000, 0.0, 0.125, 0.01);//6.0
+  // theta_pid.set_parameter( 5.0, 1000, 0.0, 0.125, 0.01);//6.0
+  // psi_pid.set_parameter  ( 0.0, 1000, 0.0, 0, 0.01);
+  
+  p_pid.set_parameter( 0.1, 10000000, 0.00, 0.125, 0.0025);//3.4
+  q_pid.set_parameter( 0.1, 10000000, 0.00, 0.125, 0.0025);//3.8
+  r_pid.set_parameter( 0.1, 100000, 0.00, 0.125, 0.0025);//9.4
   //Angle control
   phi_pid.set_parameter  ( 5.0, 1000, 0.0, 0.125, 0.01);//6.0
   theta_pid.set_parameter( 5.0, 1000, 0.0, 0.125, 0.01);//6.0
-  psi_pid.set_parameter  ( 0.0, 1000, 0.0, 0, 0.01);
-  
+  psi_pid.set_parameter  ( 0.0, 10000000, 0.0, 0, 0.01);
+
   //location control
   x_pid.set_parameter(0.01, 10000, 0.0, 0.125, 0.03);
   y_pid.set_parameter(0.01, 10000, 0.0, 0.125, 0.03);
@@ -665,7 +673,7 @@ void rate_control(void)
     differential = 0;
     differential_v = 0;
 
-    T_ref = 20*(float)(Chdata[2]-CH3MIN)/(CH3MAX-CH3MIN);
+    T_ref = 10*(float)(Chdata[2]-CH3MIN)/(CH3MAX-CH3MIN);
 
     }
 
@@ -732,45 +740,45 @@ void rate_control(void)
     Vey_com = -3.7;
   }
   // Motor Control(mixing)
-  float Pos_y_com2 =  10* (float)(Chdata[3] - (CH4MAX + CH4MIN) * 0.5) * 2 / (CH4MAX - CH4MIN);
-  float Pos_x_com2=   10* (float)(Chdata[1] - (CH2MAX + CH2MIN) * 0.5) * 2 / (CH2MAX - CH2MIN);
+  // float Pos_y_com2 =  10* (float)(Chdata[3] - (CH4MAX + CH4MIN) * 0.5) * 2 / (CH4MAX - CH4MIN);
+  // float Pos_x_com2=   10* (float)(Chdata[1] - (CH2MAX + CH2MIN) * 0.5) * 2 / (CH2MAX - CH2MIN);
 // //フィードバックあり  
-// float FR_th = ( 0.6440*Vex_com -1.1153*Vey_com +0.1725*T_ref )
-//              +(-1.4379*P_com +2.4904*Q_com -5.3690*R_com);
-
-// float MR_th = (-1.2879*Vex_com +0.0*Vey_com     +0.1725*T_ref )
-//               +(-2.8757*P_com -0.0*Q_com +5.3690*R_com);
-
-// float RR_th = ( 0.6440*Vex_com +1.1153*Vey_com +0.1725*T_ref )
-//               +(-1.4379*P_com -2.4904*Q_com -5.3690*R_com);
-
-// float RL_th = ( 0.6440*Vex_com -1.1153*Vey_com +0.1725*T_ref )
-//               +( 1.4379*P_com -2.4904*Q_com +5.3690*R_com);
-
-// float ML_th = (-1.2879*Vex_com +0.0*Vey_com +0.1725*T_ref )
-//               +( 2.8757*P_com +0.0*Q_com -5.3690*R_com);
-
-// float FL_th = ( 0.6440*Vex_com +1.1153*Vey_com +0.1725*T_ref )
-//               +( 1.4379*P_com +2.4904*Q_com +5.3690*R_com);
-
-//フィードバックなし  
-float FR_th = ( 0.6440*Pos_x_com2 -1.1153*Pos_y_com2 +0.1725*T_ref )
+float FR_th = ( 0.6440*Vex_com -1.1153*Vey_com +0.1725*T_ref )
              +(-1.4379*P_com +2.4904*Q_com -5.3690*R_com);
 
-float MR_th = (-1.2879*Pos_x_com2 +0.0*Pos_y_com2     +0.1725*T_ref )
+float MR_th = (-1.2879*Vex_com +0.0*Vey_com     +0.1725*T_ref )
               +(-2.8757*P_com -0.0*Q_com +5.3690*R_com);
 
-float RR_th = ( 0.6440*Pos_x_com2 +1.1153*Pos_y_com2 +0.1725*T_ref )
+float RR_th = ( 0.6440*Vex_com +1.1153*Vey_com +0.1725*T_ref )
               +(-1.4379*P_com -2.4904*Q_com -5.3690*R_com);
 
-float RL_th = ( 0.6440*Pos_x_com2 -1.1153*Pos_y_com2 +0.1725*T_ref )
+float RL_th = ( 0.6440*Vex_com -1.1153*Vey_com +0.1725*T_ref )
               +( 1.4379*P_com -2.4904*Q_com +5.3690*R_com);
 
-float ML_th = (-1.2879*Pos_x_com2 +0.0*Pos_y_com2 +0.1725*T_ref )
+float ML_th = (-1.2879*Vex_com +0.0*Vey_com +0.1725*T_ref )
               +( 2.8757*P_com +0.0*Q_com -5.3690*R_com);
 
-float FL_th = ( 0.6440*Pos_x_com2 +1.1153*Pos_y_com2 +0.1725*T_ref )
+float FL_th = ( 0.6440*Vex_com +1.1153*Vey_com +0.1725*T_ref )
               +( 1.4379*P_com +2.4904*Q_com +5.3690*R_com);
+
+//フィードバックなし  
+// float FR_th = ( 0.6440*Pos_x_com2 -1.1153*Pos_y_com2 +0.1725*T_ref )
+//              +(-1.4379*P_com +2.4904*Q_com -5.3690*R_com);
+
+// float MR_th = (-1.2879*Pos_x_com2 +0.0*Pos_y_com2     +0.1725*T_ref )
+//               +(-2.8757*P_com -0.0*Q_com +5.3690*R_com);
+
+// float RR_th = ( 0.6440*Pos_x_com2 +1.1153*Pos_y_com2 +0.1725*T_ref )
+//               +(-1.4379*P_com -2.4904*Q_com -5.3690*R_com);
+
+// float RL_th = ( 0.6440*Pos_x_com2 -1.1153*Pos_y_com2 +0.1725*T_ref )
+//               +( 1.4379*P_com -2.4904*Q_com +5.3690*R_com);
+
+// float ML_th = (-1.2879*Pos_x_com2 +0.0*Pos_y_com2 +0.1725*T_ref )
+//               +( 2.8757*P_com +0.0*Q_com -5.3690*R_com);
+
+// float FL_th = ( 0.6440*Pos_x_com2 +1.1153*Pos_y_com2 +0.1725*T_ref )
+//               +( 1.4379*P_com +2.4904*Q_com +5.3690*R_com);
 
 //スケーリング
 const float K_th = 0.00037;
@@ -855,6 +863,7 @@ FL_duty = K_th * std::sqrt(FL_th*1513317);
 
       set_duty_fr(FR_duty);
       set_duty_fl(FL_duty);
+      
       set_duty_mr(MR_duty);
       set_duty_ml(ML_duty);
       set_duty_rr(RR_duty);
@@ -918,9 +927,9 @@ void angle_control(void)
       Pos_x_ref =  5* (float)(Chdata[1] - (CH2MAX + CH2MIN) * 0.5) * 2 / (CH2MAX - CH2MIN);
     }
     else{
-      float Phi_trim =-9*M_PI/180.0;//-4*M_PI/180.0; 
+      float Phi_trim =0;//-9*M_PI/180.0;//-4*M_PI/180.0; 
       Phi_ref = Phi_trim + 0.8 * M_PI * (float)(Chdata[3] - (CH4MAX + CH4MIN) * 0.5) * 2 / (CH4MAX - CH4MIN);
-      float Theta_trim = 3;//3*M_PI/180;//-10*M_PI/180.0;
+      float Theta_trim = 0;//3*M_PI/180;//-10*M_PI/180.0;
       Theta_ref = Theta_trim +  M_PI * (float)(Chdata[1] - (CH2MAX + CH2MIN) * 0.5) * 2 / (CH2MAX - CH2MIN);
     }
       Psi_trim = 0;
@@ -1039,7 +1048,7 @@ void angle_control(void)
     E_time2 = time_us_32();
     D_time2 = E_time2 - S_time2;
 
-    
+
   }
 }
 
