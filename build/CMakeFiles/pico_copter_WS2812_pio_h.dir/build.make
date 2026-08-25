@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shu/pico/pico-sdk/naname_coputer-1
+CMAKE_SOURCE_DIR = /home/shu/pico/pico-sdk/naname_coputer_mixing
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shu/pico/pico-sdk/naname_coputer-1/build
+CMAKE_BINARY_DIR = /home/shu/pico/pico-sdk/naname_coputer_mixing/build
 
 # Utility rule file for pico_copter_WS2812_pio_h.
 
@@ -69,8 +69,8 @@ include CMakeFiles/pico_copter_WS2812_pio_h.dir/progress.make
 CMakeFiles/pico_copter_WS2812_pio_h: WS2812.pio.h
 
 WS2812.pio.h: ../WS2812.pio
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/shu/pico/pico-sdk/naname_coputer-1/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating WS2812.pio.h"
-	pioasm/pioasm -o c-sdk /home/shu/pico/pico-sdk/naname_coputer-1/WS2812.pio /home/shu/pico/pico-sdk/naname_coputer-1/build/WS2812.pio.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating WS2812.pio.h"
+	pioasm/pioasm -o c-sdk /home/shu/pico/pico-sdk/naname_coputer_mixing/WS2812.pio /home/shu/pico/pico-sdk/naname_coputer_mixing/build/WS2812.pio.h
 
 pico_copter_WS2812_pio_h: CMakeFiles/pico_copter_WS2812_pio_h
 pico_copter_WS2812_pio_h: WS2812.pio.h
@@ -86,6 +86,6 @@ CMakeFiles/pico_copter_WS2812_pio_h.dir/clean:
 .PHONY : CMakeFiles/pico_copter_WS2812_pio_h.dir/clean
 
 CMakeFiles/pico_copter_WS2812_pio_h.dir/depend:
-	cd /home/shu/pico/pico-sdk/naname_coputer-1/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shu/pico/pico-sdk/naname_coputer-1 /home/shu/pico/pico-sdk/naname_coputer-1 /home/shu/pico/pico-sdk/naname_coputer-1/build /home/shu/pico/pico-sdk/naname_coputer-1/build /home/shu/pico/pico-sdk/naname_coputer-1/build/CMakeFiles/pico_copter_WS2812_pio_h.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shu/pico/pico-sdk/naname_coputer_mixing /home/shu/pico/pico-sdk/naname_coputer_mixing /home/shu/pico/pico-sdk/naname_coputer_mixing/build /home/shu/pico/pico-sdk/naname_coputer_mixing/build /home/shu/pico/pico-sdk/naname_coputer_mixing/build/CMakeFiles/pico_copter_WS2812_pio_h.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/pico_copter_WS2812_pio_h.dir/depend
 

@@ -26,8 +26,9 @@
 
 #define MODE_SW 10
 #define LANDING_SW 11
-#define LOG 6
-#define FLIP 4
+// #define LOG 6
+// #define FLIP 4
+#define LOG 4
 #define REDCIRCLE 5
 #define LINETRACE 7
 // #define T_ref_up 7
