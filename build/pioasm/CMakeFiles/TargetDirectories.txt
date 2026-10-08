@@ -1,7 +1,0 @@
-/home/shu/pico/pico-sdk/naname_coputer_mixing/build/pioasm/CMakeFiles/pioasm.dir
-/home/shu/pico/pico-sdk/naname_coputer_mixing/build/pioasm/CMakeFiles/edit_cache.dir
-/home/shu/pico/pico-sdk/naname_coputer_mixing/build/pioasm/CMakeFiles/rebuild_cache.dir
-/home/shu/pico/pico-sdk/naname_coputer_mixing/build/pioasm/CMakeFiles/list_install_components.dir
-/home/shu/pico/pico-sdk/naname_coputer_mixing/build/pioasm/CMakeFiles/install.dir
-/home/shu/pico/pico-sdk/naname_coputer_mixing/build/pioasm/CMakeFiles/install/local.dir
-/home/shu/pico/pico-sdk/naname_coputer_mixing/build/pioasm/CMakeFiles/install/strip.dir

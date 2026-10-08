@@ -1,5 +1,0 @@
-/home/shu/pico/pico-sdk/naname_coputer_mixing/build/pioasm-install/pioasm/pioasm
-/home/shu/pico/pico-sdk/naname_coputer_mixing/build/pioasm-install/pioasm/pioasmTargets.cmake
-/home/shu/pico/pico-sdk/naname_coputer_mixing/build/pioasm-install/pioasm/pioasmTargets-release.cmake
-/home/shu/pico/pico-sdk/naname_coputer_mixing/build/pioasm-install/pioasm/pioasmConfig.cmake
-/home/shu/pico/pico-sdk/naname_coputer_mixing/build/pioasm-install/pioasm/pioasmConfigVersion.cmake
