@@ -70,7 +70,7 @@ CMakeFiles/pico_copter_WS2812_pio_h: WS2812.pio.h
 
 WS2812.pio.h: ../WS2812.pio
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating WS2812.pio.h"
-	pioasm/pioasm -o c-sdk /home/shu/pico/pico-sdk/naname_coputer_mixing/WS2812.pio /home/shu/pico/pico-sdk/naname_coputer_mixing/build/WS2812.pio.h
+	pioasm-install/pioasm/pioasm -o c-sdk -v 0 /home/shu/pico/pico-sdk/naname_coputer_mixing/WS2812.pio /home/shu/pico/pico-sdk/naname_coputer_mixing/build/WS2812.pio.h
 
 pico_copter_WS2812_pio_h: CMakeFiles/pico_copter_WS2812_pio_h
 pico_copter_WS2812_pio_h: WS2812.pio.h

@@ -38,18 +38,102 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/home/shu/pico/pico-sdk/Benzen_new/test/pico_test/cmake_install.cmake")
-  include("/home/shu/pico/pico-sdk/Benzen_new/test/pico_stdlib_test/cmake_install.cmake")
-  include("/home/shu/pico/pico-sdk/Benzen_new/test/pico_stdio_test/cmake_install.cmake")
-  include("/home/shu/pico/pico-sdk/Benzen_new/test/pico_time_test/cmake_install.cmake")
-  include("/home/shu/pico/pico-sdk/Benzen_new/test/pico_divider_test/cmake_install.cmake")
-  include("/home/shu/pico/pico-sdk/Benzen_new/test/pico_float_test/cmake_install.cmake")
-  include("/home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink/cmake_install.cmake")
-  include("/home/shu/pico/pico-sdk/Benzen_new/test/hardware_irq_test/cmake_install.cmake")
-  include("/home/shu/pico/pico-sdk/Benzen_new/test/hardware_pwm_test/cmake_install.cmake")
-  include("/home/shu/pico/pico-sdk/Benzen_new/test/cmsis_test/cmake_install.cmake")
-  include("/home/shu/pico/pico-sdk/Benzen_new/test/pico_sem_test/cmake_install.cmake")
+  # Include the install script for the subdirectory.
+  include("/home/shu/pico/pico-sdk/naname_coputer_mixing/test/pico_test/cmake_install.cmake")
+endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/shu/pico/pico-sdk/naname_coputer_mixing/test/pico_stdlib_test/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/shu/pico/pico-sdk/naname_coputer_mixing/test/pico_stdio_test/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/shu/pico/pico-sdk/naname_coputer_mixing/test/pico_time_test/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/shu/pico/pico-sdk/naname_coputer_mixing/test/pico_divider_test/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/shu/pico/pico-sdk/naname_coputer_mixing/test/fixed_bitset_test/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/shu/pico/pico-sdk/naname_coputer_mixing/test/panic_function_test/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/shu/pico/pico-sdk/naname_coputer_mixing/test/pico_float_test/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/shu/pico/pico-sdk/naname_coputer_mixing/test/hardware_irq_test/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/shu/pico/pico-sdk/naname_coputer_mixing/test/hardware_pwm_test/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/shu/pico/pico-sdk/naname_coputer_mixing/test/hardware_sync_spin_lock_test/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/shu/pico/pico-sdk/naname_coputer_mixing/test/cmsis_test/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/shu/pico/pico-sdk/naname_coputer_mixing/test/pico_sem_test/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/shu/pico/pico-sdk/naname_coputer_mixing/test/pico_sha256_test/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/shu/pico/pico-sdk/naname_coputer_mixing/test/pico_sync_test/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/shu/pico/pico-sdk/naname_coputer_mixing/test/pico_xip_sram_test/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/shu/pico/pico-sdk/naname_coputer_mixing/test/pico_low_power_test/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/shu/pico/pico-sdk/naname_coputer_mixing/test/pico_async_context_test/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/shu/pico/pico-sdk/naname_coputer_mixing/test/pico_thread_local_test/cmake_install.cmake")
 endif()
 

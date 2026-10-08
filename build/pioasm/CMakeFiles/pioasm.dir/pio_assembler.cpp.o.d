@@ -28,7 +28,8 @@ CMakeFiles/pioasm.dir/pio_assembler.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/floatn.h \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /usr/include/c++/11/iterator \
+ /usr/include/x86_64-linux-gnu/bits/stdio.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h /usr/include/c++/11/iterator \
  /usr/include/c++/11/bits/stl_iterator_base_types.h \
  /usr/include/c++/11/type_traits \
  /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
@@ -46,6 +47,7 @@ CMakeFiles/pioasm.dir/pio_assembler.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar2.h \
  /usr/include/c++/11/bits/stream_iterator.h \
  /usr/include/c++/11/debug/debug.h \
  /usr/include/c++/11/bits/streambuf_iterator.h \
@@ -118,7 +120,10 @@ CMakeFiles/pioasm.dir/pio_assembler.cpp.o: \
  /usr/include/x86_64-linux-gnu/sys/select.h \
  /usr/include/x86_64-linux-gnu/bits/select.h \
  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
- /usr/include/alloca.h /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/x86_64-linux-gnu/bits/select2.h /usr/include/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h \
  /usr/include/c++/11/bits/std_abs.h /usr/include/c++/11/cerrno \
  /usr/include/errno.h /usr/include/x86_64-linux-gnu/bits/errno.h \
  /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
@@ -186,6 +191,7 @@ CMakeFiles/pioasm.dir/pio_assembler.cpp.o: \
  /usr/include/c++/11/backward/auto_ptr.h \
  /home/shu/pico/pico-sdk/tools/pioasm/gen/location.h \
  /usr/include/c++/11/iostream \
+ /home/shu/pico/pico-sdk/tools/pioasm/pio_enums.h \
  /home/shu/pico/pico-sdk/tools/pioasm/gen/location.h \
  /usr/include/c++/11/cassert /usr/include/assert.h \
  /home/shu/pico/pico-sdk/tools/pioasm/output_format.h

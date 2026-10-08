@@ -3,7 +3,7 @@ set(CMAKE_HOST_SYSTEM_NAME "Linux")
 set(CMAKE_HOST_SYSTEM_VERSION "5.15.167.4-microsoft-standard-WSL2")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")
 
-include("/home/shu/pico/pico-sdk/cmake/preload/toolchains/pico_arm_gcc.cmake")
+include("/home/shu/pico/pico-sdk/cmake/preload/toolchains/pico_arm_cortex_m0plus_gcc.cmake")
 
 set(CMAKE_SYSTEM "PICO")
 set(CMAKE_SYSTEM_NAME "PICO")

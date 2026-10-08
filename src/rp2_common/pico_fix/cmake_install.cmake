@@ -38,8 +38,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/home/shu/pico/pico-sdk/Benzen_new/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/cmake_install.cmake")
-
+  # Include the install script for the subdirectory.
+  include("/home/shu/pico/pico-sdk/naname_coputer_mixing/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/cmake_install.cmake")
 endif()
 

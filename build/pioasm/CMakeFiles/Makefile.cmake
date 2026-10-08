@@ -9,7 +9,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
+  "/home/shu/pico/pico-sdk/pico_sdk_version.cmake"
   "/home/shu/pico/pico-sdk/tools/pioasm/CMakeLists.txt"
+  "/home/shu/pico/pico-sdk/tools/pioasm/cmake/pioasmConfig.cmake"
+  "/home/shu/pico/pico-sdk/tools/pioasm/version.h.in"
+  "/usr/share/cmake-3.22/Modules/BasicConfigVersion-ExactVersion.cmake.in"
   "/usr/share/cmake-3.22/Modules/CMakeCXXCompiler.cmake.in"
   "/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp"
   "/usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake"
@@ -25,6 +29,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeLanguageInformation.cmake"
+  "/usr/share/cmake-3.22/Modules/CMakePackageConfigHelpers.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeParseImplicitIncludeInfo.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeParseImplicitLinkInfo.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeParseLibraryArchitecture.cmake"
@@ -71,12 +76,14 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.22/Modules/Compiler/XL-CXX-DetermineCompiler.cmake"
   "/usr/share/cmake-3.22/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake"
   "/usr/share/cmake-3.22/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake"
+  "/usr/share/cmake-3.22/Modules/GNUInstallDirs.cmake"
   "/usr/share/cmake-3.22/Modules/Internal/FeatureTesting.cmake"
   "/usr/share/cmake-3.22/Modules/Platform/Linux-Determine-CXX.cmake"
   "/usr/share/cmake-3.22/Modules/Platform/Linux-GNU-CXX.cmake"
   "/usr/share/cmake-3.22/Modules/Platform/Linux-GNU.cmake"
   "/usr/share/cmake-3.22/Modules/Platform/Linux.cmake"
   "/usr/share/cmake-3.22/Modules/Platform/UnixPaths.cmake"
+  "/usr/share/cmake-3.22/Modules/WriteBasicConfigVersionFile.cmake"
   )
 
 # The corresponding makefile is:
@@ -90,6 +97,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
+  "version.h"
+  "pioasmConfigVersion.cmake"
+  "pioasmConfig.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 

@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/shu/pico/pico-sdk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shu/pico/pico-sdk/Benzen_new
+CMAKE_BINARY_DIR = /home/shu/pico/pico-sdk/naname_coputer_mixing
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/shu/pico/pico-sdk/Benzen_new && $(CMAKE_COMMAND) -E cmake_progress_start /home/shu/pico/pico-sdk/Benzen_new/CMakeFiles /home/shu/pico/pico-sdk/Benzen_new/src/rp2_common/pico_cyw43_driver//CMakeFiles/progress.marks
-	cd /home/shu/pico/pico-sdk/Benzen_new && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/rp2_common/pico_cyw43_driver/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shu/pico/pico-sdk/Benzen_new/CMakeFiles 0
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing && $(CMAKE_COMMAND) -E cmake_progress_start /home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles /home/shu/pico/pico-sdk/naname_coputer_mixing/src/rp2_common/pico_cyw43_driver//CMakeFiles/progress.marks
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/rp2_common/pico_cyw43_driver/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/shu/pico/pico-sdk/Benzen_new && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/rp2_common/pico_cyw43_driver/clean
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/rp2_common/pico_cyw43_driver/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,36 +103,36 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/shu/pico/pico-sdk/Benzen_new && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/rp2_common/pico_cyw43_driver/preinstall
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/rp2_common/pico_cyw43_driver/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/shu/pico/pico-sdk/Benzen_new && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/rp2_common/pico_cyw43_driver/preinstall
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/rp2_common/pico_cyw43_driver/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/shu/pico/pico-sdk/Benzen_new && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/rule:
-	cd /home/shu/pico/pico-sdk/Benzen_new && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/rule
-.PHONY : src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/rule
+src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir/rule:
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir/rule
+.PHONY : src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir/rule
 
 # Convenience name for target.
-PioasmBuild: src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/rule
-.PHONY : PioasmBuild
+pioasmBuild: src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir/rule
+.PHONY : pioasmBuild
 
 # fast build rule for target.
-PioasmBuild/fast:
-	cd /home/shu/pico/pico-sdk/Benzen_new && $(MAKE) $(MAKESILENT) -f src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/build.make src/rp2_common/pico_cyw43_driver/CMakeFiles/PioasmBuild.dir/build
-.PHONY : PioasmBuild/fast
+pioasmBuild/fast:
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing && $(MAKE) $(MAKESILENT) -f src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir/build.make src/rp2_common/pico_cyw43_driver/CMakeFiles/pioasmBuild.dir/build
+.PHONY : pioasmBuild/fast
 
 # Convenience name for target.
 src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/rule:
-	cd /home/shu/pico/pico-sdk/Benzen_new && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/rule
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/rule
 .PHONY : src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/rule
 
 # Convenience name for target.
@@ -141,7 +141,7 @@ cyw43_driver_picow_cyw43_bus_pio_spi_pio_h: src/rp2_common/pico_cyw43_driver/CMa
 
 # fast build rule for target.
 cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast:
-	cd /home/shu/pico/pico-sdk/Benzen_new && $(MAKE) $(MAKESILENT) -f src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing && $(MAKE) $(MAKESILENT) -f src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build.make src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 .PHONY : cyw43_driver_picow_cyw43_bus_pio_spi_pio_h/fast
 
 # Help Target
@@ -152,8 +152,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... PioasmBuild"
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
+	@echo "... pioasmBuild"
 .PHONY : help
 
 
@@ -165,6 +165,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/shu/pico/pico-sdk/Benzen_new && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

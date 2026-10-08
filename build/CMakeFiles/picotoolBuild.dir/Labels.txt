@@ -1,0 +1,14 @@
+# Target labels
+ picotoolBuild
+# Source files and their labels
+/home/shu/pico/pico-sdk/naname_coputer_mixing/build/CMakeFiles/picotoolBuild
+/home/shu/pico/pico-sdk/naname_coputer_mixing/build/CMakeFiles/picotoolBuild.rule
+/home/shu/pico/pico-sdk/naname_coputer_mixing/build/CMakeFiles/picotoolBuild-complete.rule
+/home/shu/pico/pico-sdk/naname_coputer_mixing/build/picotool/src/picotoolBuild-stamp/picotoolBuild-build.rule
+/home/shu/pico/pico-sdk/naname_coputer_mixing/build/picotool/src/picotoolBuild-stamp/picotoolBuild-configure.rule
+/home/shu/pico/pico-sdk/naname_coputer_mixing/build/picotool/src/picotoolBuild-stamp/picotoolBuild-download.rule
+/home/shu/pico/pico-sdk/naname_coputer_mixing/build/picotool/src/picotoolBuild-stamp/picotoolBuild-install.rule
+/home/shu/pico/pico-sdk/naname_coputer_mixing/build/picotool/src/picotoolBuild-stamp/picotoolBuild-mkdir.rule
+/home/shu/pico/pico-sdk/naname_coputer_mixing/build/picotool/src/picotoolBuild-stamp/picotoolBuild-patch.rule
+/home/shu/pico/pico-sdk/naname_coputer_mixing/build/picotool/src/picotoolBuild-stamp/picotoolBuild-test.rule
+/home/shu/pico/pico-sdk/naname_coputer_mixing/build/picotool/src/picotoolBuild-stamp/picotoolBuild-update.rule

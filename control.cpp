@@ -508,13 +508,17 @@ void control_init(void)
   // theta_pid.set_parameter( 5.0, 1000, 0.0, 0.125, 0.01);//6.0
   // psi_pid.set_parameter  ( 0.0, 1000, 0.0, 0, 0.01);
   
-  p_pid.set_parameter( 0.3, 10000000, 0.00, 0.125, 0.0025);//3.4
-  q_pid.set_parameter( 0.3, 10000000, 0.00, 0.125, 0.0025);//3.8
-  r_pid.set_parameter( 0.1, 100000, 0.00, 0.125, 0.0025);//9.4
+  // p_pid.set_parameter( 0.32, 1000, 0.001, 0.125, 0.0025);//3.4
+  // q_pid.set_parameter( 0.32, 1000, 0.001, 0.125, 0.0025);//3.8
+  // r_pid.set_parameter( 0.1, 1000, 0.00, 0.125, 0.0025);//9.4
+  
+  p_pid.set_parameter( 0.35, 1000, 0.0011, 0.125, 0.0025);//3.4
+  q_pid.set_parameter( 0.26, 1000, 0.0006, 0.125, 0.0025);//3.8
+  r_pid.set_parameter( 0.50, 100, 0.00, 0.125, 0.0025);//9.4
   //Angle control
   phi_pid.set_parameter  ( 5.0, 1000, 0.0, 0.125, 0.01);//6.0
   theta_pid.set_parameter( 5.0, 1000, 0.0, 0.125, 0.01);//6.0
-  psi_pid.set_parameter  ( 0.0, 10000000, 0.0, 0, 0.01);
+  psi_pid.set_parameter  ( 0.0, 1000, 0.0, 0, 0.01);
 
   //location control
   x_pid.set_parameter(0.01, 10000, 0.0, 0.125, 0.03);
@@ -677,7 +681,9 @@ void rate_control(void)
 
     }
 
- 
+  
+    float Pos_y_com2 =   (float)(Chdata[3] - (CH4MAX + CH4MIN) * 0.5) * 2 / (CH4MAX - CH4MIN);
+    float Pos_x_com2=    (float)(Chdata[1] - (CH2MAX + CH2MIN) * 0.5) * 2 / (CH2MAX - CH2MIN);
   
 
   // Error
@@ -740,26 +746,25 @@ void rate_control(void)
     Vey_com = -3.7;
   }
   // Motor Control(mixing)
-  // float Pos_y_com2 =  10* (float)(Chdata[3] - (CH4MAX + CH4MIN) * 0.5) * 2 / (CH4MAX - CH4MIN);
-  // float Pos_x_com2=   10* (float)(Chdata[1] - (CH2MAX + CH2MIN) * 0.5) * 2 / (CH2MAX - CH2MIN);
-// //フィードバックあり  
+ 
+ //フィードバックあり  
 float FR_th = ( 0.6440*Vex_com -1.1153*Vey_com +0.1725*T_ref )
-             +(-1.4379*P_com +2.4904*Q_com +5.3690*R_com);
+             +(-1.4379*P_com +2.4904*Q_com +3.390*R_com);
 
 float MR_th = (-1.2879*Vex_com +0.0*Vey_com     +0.1725*T_ref )
-              +(-2.8757*P_com -0.0*Q_com -5.3690*R_com);
+              +(-2.8757*P_com -0.0*Q_com -3.390*R_com);
 
 float RR_th = ( 0.6440*Vex_com +1.1153*Vey_com +0.1725*T_ref )
-              +(-1.4379*P_com -2.4904*Q_com +5.3690*R_com);
+              +(-1.4379*P_com -2.4904*Q_com +3.390*R_com);
 
 float RL_th = ( 0.6440*Vex_com -1.1153*Vey_com +0.1725*T_ref )
-              +( 1.4379*P_com -2.4904*Q_com -5.3690*R_com);
+              +( 1.4379*P_com -2.4904*Q_com -3.390*R_com);
 
 float ML_th = (-1.2879*Vex_com +0.0*Vey_com +0.1725*T_ref )
-              +( 2.8757*P_com +0.0*Q_com +5.3690*R_com);
+              +( 2.8757*P_com +0.0*Q_com +3.390*R_com);
 
 float FL_th = ( 0.6440*Vex_com +1.1153*Vey_com +0.1725*T_ref )
-              +( 1.4379*P_com +2.4904*Q_com -5.3690*R_com);
+              +( 1.4379*P_com +2.4904*Q_com -3.390*R_com);
 
 
 //フィードバックなし  
@@ -926,11 +931,12 @@ void angle_control(void)
     if(Chdata[REDCIRCLE]>500)  {
       Pos_y_ref =  5* (float)(Chdata[3] - (CH4MAX + CH4MIN) * 0.5) * 2 / (CH4MAX - CH4MIN);
       Pos_x_ref =  5* (float)(Chdata[1] - (CH2MAX + CH2MIN) * 0.5) * 2 / (CH2MAX - CH2MIN);
+
     }
     else{
-      float Phi_trim =0;//-9*M_PI/180.0;//-4*M_PI/180.0; 
+      float Phi_trim =-M_PI/180.0;//-2*M_PI/180.0; 
       Phi_ref = Phi_trim + 0.8 * M_PI * (float)(Chdata[3] - (CH4MAX + CH4MIN) * 0.5) * 2 / (CH4MAX - CH4MIN);
-      float Theta_trim = 0;//3*M_PI/180;//-10*M_PI/180.0;
+      float Theta_trim =4*M_PI/180;//4*M_PI/180.0;
       Theta_ref = Theta_trim +  M_PI * (float)(Chdata[1] - (CH2MAX + CH2MIN) * 0.5) * 2 / (CH2MAX - CH2MIN);
     }
       Psi_trim = 0;

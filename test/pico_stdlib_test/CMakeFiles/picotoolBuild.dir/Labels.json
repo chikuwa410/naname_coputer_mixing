@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/shu/pico/pico-sdk/naname_coputer_mixing/test/pico_stdlib_test/CMakeFiles/picotoolBuild"
+		},
+		{
+			"file" : "/home/shu/pico/pico-sdk/naname_coputer_mixing/test/pico_stdlib_test/CMakeFiles/picotoolBuild.rule"
+		},
+		{
+			"file" : "/home/shu/pico/pico-sdk/naname_coputer_mixing/test/pico_stdlib_test/CMakeFiles/picotoolBuild-complete.rule"
+		},
+		{
+			"file" : "/home/shu/pico/pico-sdk/naname_coputer_mixing/test/pico_stdlib_test/picotool/src/picotoolBuild-stamp/picotoolBuild-build.rule"
+		},
+		{
+			"file" : "/home/shu/pico/pico-sdk/naname_coputer_mixing/test/pico_stdlib_test/picotool/src/picotoolBuild-stamp/picotoolBuild-configure.rule"
+		},
+		{
+			"file" : "/home/shu/pico/pico-sdk/naname_coputer_mixing/test/pico_stdlib_test/picotool/src/picotoolBuild-stamp/picotoolBuild-download.rule"
+		},
+		{
+			"file" : "/home/shu/pico/pico-sdk/naname_coputer_mixing/test/pico_stdlib_test/picotool/src/picotoolBuild-stamp/picotoolBuild-install.rule"
+		},
+		{
+			"file" : "/home/shu/pico/pico-sdk/naname_coputer_mixing/test/pico_stdlib_test/picotool/src/picotoolBuild-stamp/picotoolBuild-mkdir.rule"
+		},
+		{
+			"file" : "/home/shu/pico/pico-sdk/naname_coputer_mixing/test/pico_stdlib_test/picotool/src/picotoolBuild-stamp/picotoolBuild-patch.rule"
+		},
+		{
+			"file" : "/home/shu/pico/pico-sdk/naname_coputer_mixing/test/pico_stdlib_test/picotool/src/picotoolBuild-stamp/picotoolBuild-test.rule"
+		},
+		{
+			"file" : "/home/shu/pico/pico-sdk/naname_coputer_mixing/test/pico_stdlib_test/picotool/src/picotoolBuild-stamp/picotoolBuild-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"picotoolBuild"
+		],
+		"name" : "picotoolBuild"
+	}
+}

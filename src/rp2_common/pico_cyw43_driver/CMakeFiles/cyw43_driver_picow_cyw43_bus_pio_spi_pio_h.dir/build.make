@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/shu/pico/pico-sdk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shu/pico/pico-sdk/Benzen_new
+CMAKE_BINARY_DIR = /home/shu/pico/pico-sdk/naname_coputer_mixing
 
 # Utility rule file for cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.
 
@@ -69,8 +69,8 @@ include src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus
 src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h: src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h
 
 src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h: ../src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating cyw43_bus_pio_spi.pio.h"
-	cd /home/shu/pico/pico-sdk/Benzen_new/src/rp2_common/pico_cyw43_driver && ../../../pioasm/pioasm -o c-sdk /home/shu/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio /home/shu/pico/pico-sdk/Benzen_new/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating cyw43_bus_pio_spi.pio.h"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/src/rp2_common/pico_cyw43_driver && ../../../pioasm-install/pioasm/pioasm -o c-sdk -v 0 /home/shu/pico/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio /home/shu/pico/pico-sdk/naname_coputer_mixing/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h
 
 cyw43_driver_picow_cyw43_bus_pio_spi_pio_h: src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h
 cyw43_driver_picow_cyw43_bus_pio_spi_pio_h: src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.pio.h
@@ -82,10 +82,10 @@ src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi
 .PHONY : src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/build
 
 src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/clean:
-	cd /home/shu/pico/pico-sdk/Benzen_new/src/rp2_common/pico_cyw43_driver && $(CMAKE_COMMAND) -P CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/cmake_clean.cmake
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/src/rp2_common/pico_cyw43_driver && $(CMAKE_COMMAND) -P CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/cmake_clean.cmake
 .PHONY : src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/clean
 
 src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/depend:
-	cd /home/shu/pico/pico-sdk/Benzen_new && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shu/pico/pico-sdk /home/shu/pico/pico-sdk/src/rp2_common/pico_cyw43_driver /home/shu/pico/pico-sdk/Benzen_new /home/shu/pico/pico-sdk/Benzen_new/src/rp2_common/pico_cyw43_driver /home/shu/pico/pico-sdk/Benzen_new/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shu/pico/pico-sdk /home/shu/pico/pico-sdk/src/rp2_common/pico_cyw43_driver /home/shu/pico/pico-sdk/naname_coputer_mixing /home/shu/pico/pico-sdk/naname_coputer_mixing/src/rp2_common/pico_cyw43_driver /home/shu/pico/pico-sdk/naname_coputer_mixing/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/depend
 

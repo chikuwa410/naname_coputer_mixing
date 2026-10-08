@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/shu/pico/pico-sdk
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shu/pico/pico-sdk/Benzen_new
+CMAKE_BINARY_DIR = /home/shu/pico/pico-sdk/naname_coputer_mixing
 
 # Include any dependencies generated for this target.
 include test/kitchen_sink/CMakeFiles/kitchen_sink.dir/depend.make
@@ -69,1013 +69,1377 @@ include test/kitchen_sink/CMakeFiles/kitchen_sink.dir/progress.make
 # Include the compile flags for this target's objects.
 include test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/kitchen_sink.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/kitchen_sink.c.obj: ../test/kitchen_sink/kitchen_sink.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/kitchen_sink.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/kitchen_sink.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/kitchen_sink.c.obj -MF CMakeFiles/kitchen_sink.dir/kitchen_sink.c.obj.d -o CMakeFiles/kitchen_sink.dir/kitchen_sink.c.obj -c /home/shu/pico/pico-sdk/test/kitchen_sink/kitchen_sink.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/kitchen_sink.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/kitchen_sink.c.o: ../test/kitchen_sink/kitchen_sink.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/kitchen_sink.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/kitchen_sink.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/kitchen_sink.c.o -MF CMakeFiles/kitchen_sink.dir/kitchen_sink.c.o.d -o CMakeFiles/kitchen_sink.dir/kitchen_sink.c.o -c /home/shu/pico/pico-sdk/test/kitchen_sink/kitchen_sink.c
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/kitchen_sink.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/kitchen_sink.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/test/kitchen_sink/kitchen_sink.c > CMakeFiles/kitchen_sink.dir/kitchen_sink.c.i
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/test/kitchen_sink/kitchen_sink.c > CMakeFiles/kitchen_sink.dir/kitchen_sink.c.i
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/kitchen_sink.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/kitchen_sink.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/test/kitchen_sink/kitchen_sink.c -o CMakeFiles/kitchen_sink.dir/kitchen_sink.c.s
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/test/kitchen_sink/kitchen_sink.c -o CMakeFiles/kitchen_sink.dir/kitchen_sink.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_adc/adc.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_adc/adc.c.obj: ../src/rp2_common/hardware_adc/adc.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_adc/adc.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_adc/adc.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_adc/adc.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_adc/adc.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_adc/adc.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_adc/adc.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_adc/adc.c.o: ../src/rp2_common/hardware_adc/adc.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_adc/adc.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_adc/adc.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_adc/adc.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_adc/adc.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_adc/adc.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_adc/adc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_adc/adc.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_adc/adc.c.i
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_adc/adc.c.i
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_adc/adc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_adc/adc.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_adc/adc.c.s
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_adc/adc.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform/platform.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform/platform.c.obj: ../src/rp2_common/pico_platform/platform.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform/platform.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform/platform.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform/platform.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform/platform.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform/platform.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/pico_platform/platform.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2040/pico_platform/platform.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2040/pico_platform/platform.c.o: ../src/rp2040/pico_platform/platform.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2040/pico_platform/platform.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2040/pico_platform/platform.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2040/pico_platform/platform.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2040/pico_platform/platform.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2040/pico_platform/platform.c.o -c /home/shu/pico/pico-sdk/src/rp2040/pico_platform/platform.c
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform/platform.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform/platform.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_platform/platform.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform/platform.c.i
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2040/pico_platform/platform.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2040/pico_platform/platform.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2040/pico_platform/platform.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2040/pico_platform/platform.c.i
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform/platform.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform/platform.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_platform/platform.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform/platform.c.s
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2040/pico_platform/platform.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2040/pico_platform/platform.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2040/pico_platform/platform.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2040/pico_platform/platform.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_claim/claim.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_claim/claim.c.obj: ../src/rp2_common/hardware_claim/claim.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_claim/claim.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_claim/claim.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_claim/claim.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_claim/claim.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_claim/claim.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_common/common.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_common/common.c.o: ../src/rp2_common/pico_platform_common/common.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_common/common.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_common/common.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_common/common.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_common/common.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_common/common.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_claim/claim.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_claim/claim.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_claim/claim.c.i
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_common/common.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_common/common.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_common/common.c.i
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_claim/claim.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_claim/claim.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_claim/claim.c.s
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_common/common.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_common/common.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_platform_common/common.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_common/common.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync/sync.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync/sync.c.obj: ../src/rp2_common/hardware_sync/sync.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync/sync.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync/sync.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync/sync.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync/sync.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync/sync.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_panic/panic.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_panic/panic.c.o: ../src/rp2_common/pico_platform_panic/panic.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_panic/panic.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_panic/panic.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_panic/panic.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_panic/panic.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_panic/panic.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_panic/panic.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_panic/panic.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_panic/panic.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_panic/panic.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_panic/panic.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_platform_panic/panic.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_panic/panic.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_panic/custom_panic_function.S.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_panic/custom_panic_function.S.o: ../src/rp2_common/pico_platform_panic/custom_panic_function.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building ASM object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_panic/custom_panic_function.S.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_panic/custom_panic_function.S.o   -c /home/shu/pico/pico-sdk/src/rp2_common/pico_platform_panic/custom_panic_function.S
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_panic/custom_panic_function.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_panic/custom_panic_function.S.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_platform_panic/custom_panic_function.S > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_panic/custom_panic_function.S.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_panic/custom_panic_function.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling ASM source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_panic/custom_panic_function.S.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_platform_panic/custom_panic_function.S -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_panic/custom_panic_function.S.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/hardware_claim/claim.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/hardware_claim/claim.c.o: ../src/common/hardware_claim/claim.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/hardware_claim/claim.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/hardware_claim/claim.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/hardware_claim/claim.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/common/hardware_claim/claim.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/common/hardware_claim/claim.c.o -c /home/shu/pico/pico-sdk/src/common/hardware_claim/claim.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/hardware_claim/claim.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/common/hardware_claim/claim.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/common/hardware_claim/claim.c > CMakeFiles/kitchen_sink.dir/__/__/src/common/hardware_claim/claim.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/hardware_claim/claim.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/common/hardware_claim/claim.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/common/hardware_claim/claim.c -o CMakeFiles/kitchen_sink.dir/__/__/src/common/hardware_claim/claim.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync/sync.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync/sync.c.o: ../src/rp2_common/hardware_sync/sync.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync/sync.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync/sync.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync/sync.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync/sync.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync/sync.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync/sync.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync/sync.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync/sync.c.i
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync/sync.c.i
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync/sync.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync/sync.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync/sync.c.s
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync/sync.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_gpio/gpio.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_gpio/gpio.c.obj: ../src/rp2_common/hardware_gpio/gpio.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_gpio/gpio.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_gpio/gpio.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_gpio/gpio.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_gpio/gpio.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_gpio/gpio.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: ../src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_gpio/gpio.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_gpio/gpio.c.o: ../src/rp2_common/hardware_gpio/gpio.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_gpio/gpio.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_gpio/gpio.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_gpio/gpio.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_gpio/gpio.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_gpio/gpio.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_gpio/gpio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_gpio/gpio.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_gpio/gpio.c.i
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_gpio/gpio.c.i
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_gpio/gpio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_gpio/gpio.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_gpio/gpio.c.s
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_gpio/gpio.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq.c.obj: ../src/rp2_common/hardware_irq/irq.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq.c.o: ../src/rp2_common/hardware_irq/irq.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq.c.i
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq.c.i
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq.c.s
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: ../src/rp2_common/hardware_irq/irq_handler_chain.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building ASM object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq_handler_chain.S.obj   -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq_handler_chain.S.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq_handler_chain.S.o: ../src/rp2_common/hardware_irq/irq_handler_chain.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building ASM object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq_handler_chain.S.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq_handler_chain.S.o   -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq_handler_chain.S.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq_handler_chain.S.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq_handler_chain.S.i
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq_handler_chain.S.i
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq_handler_chain.S.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling ASM source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq_handler_chain.S.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq_handler_chain.S.s
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq_handler_chain.S.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/sem.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/sem.c.obj: ../src/common/pico_sync/sem.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/sem.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/sem.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/sem.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/sem.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/sem.c.obj -c /home/shu/pico/pico-sdk/src/common/pico_sync/sem.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/sem.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/sem.c.o: ../src/common/pico_sync/sem.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/sem.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/sem.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/sem.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/sem.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/sem.c.o -c /home/shu/pico/pico-sdk/src/common/pico_sync/sem.c
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/sem.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/sem.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/common/pico_sync/sem.c > CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/sem.c.i
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/common/pico_sync/sem.c > CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/sem.c.i
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/sem.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/sem.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/common/pico_sync/sem.c -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/sem.c.s
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/common/pico_sync/sem.c -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/sem.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/lock_core.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/lock_core.c.obj: ../src/common/pico_sync/lock_core.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/lock_core.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/lock_core.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/lock_core.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/lock_core.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/lock_core.c.obj -c /home/shu/pico/pico-sdk/src/common/pico_sync/lock_core.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/lock_core.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/lock_core.c.o: ../src/common/pico_sync/lock_core.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/lock_core.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/lock_core.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/lock_core.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/lock_core.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/lock_core.c.o -c /home/shu/pico/pico-sdk/src/common/pico_sync/lock_core.c
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/lock_core.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/lock_core.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/common/pico_sync/lock_core.c > CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/lock_core.c.i
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/common/pico_sync/lock_core.c > CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/lock_core.c.i
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/lock_core.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/lock_core.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/common/pico_sync/lock_core.c -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/lock_core.c.s
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/common/pico_sync/lock_core.c -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/lock_core.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/mutex.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/mutex.c.obj: ../src/common/pico_sync/mutex.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/mutex.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/mutex.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/mutex.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/mutex.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/mutex.c.obj -c /home/shu/pico/pico-sdk/src/common/pico_sync/mutex.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/mutex.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/mutex.c.o: ../src/common/pico_sync/mutex.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/mutex.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/mutex.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/mutex.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/mutex.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/mutex.c.o -c /home/shu/pico/pico-sdk/src/common/pico_sync/mutex.c
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/mutex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/mutex.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/common/pico_sync/mutex.c > CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/mutex.c.i
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/common/pico_sync/mutex.c > CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/mutex.c.i
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/mutex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/mutex.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/common/pico_sync/mutex.c -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/mutex.c.s
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/common/pico_sync/mutex.c -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/mutex.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/critical_section.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/critical_section.c.obj: ../src/common/pico_sync/critical_section.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/critical_section.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/critical_section.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/critical_section.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/critical_section.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/critical_section.c.obj -c /home/shu/pico/pico-sdk/src/common/pico_sync/critical_section.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/critical_section.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/critical_section.c.o: ../src/common/pico_sync/critical_section.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/critical_section.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/critical_section.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/critical_section.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/critical_section.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/critical_section.c.o -c /home/shu/pico/pico-sdk/src/common/pico_sync/critical_section.c
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/critical_section.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/critical_section.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/common/pico_sync/critical_section.c > CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/critical_section.c.i
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/common/pico_sync/critical_section.c > CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/critical_section.c.i
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/critical_section.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/critical_section.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/common/pico_sync/critical_section.c -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/critical_section.c.s
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/common/pico_sync/critical_section.c -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/critical_section.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/time.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/time.c.obj: ../src/common/pico_time/time.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/time.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/time.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/time.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/time.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/time.c.obj -c /home/shu/pico/pico-sdk/src/common/pico_time/time.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/time.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/time.c.o: ../src/common/pico_time/time.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/time.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/time.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/time.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/time.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/time.c.o -c /home/shu/pico/pico-sdk/src/common/pico_time/time.c
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/time.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/time.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/common/pico_time/time.c > CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/time.c.i
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/common/pico_time/time.c > CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/time.c.i
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/time.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/time.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/common/pico_time/time.c -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/time.c.s
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/common/pico_time/time.c -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/time.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/timeout_helper.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/timeout_helper.c.obj: ../src/common/pico_time/timeout_helper.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/timeout_helper.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/timeout_helper.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/timeout_helper.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/timeout_helper.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/timeout_helper.c.obj -c /home/shu/pico/pico-sdk/src/common/pico_time/timeout_helper.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/timeout_helper.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/timeout_helper.c.o: ../src/common/pico_time/timeout_helper.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/timeout_helper.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/timeout_helper.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/timeout_helper.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/timeout_helper.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/timeout_helper.c.o -c /home/shu/pico/pico-sdk/src/common/pico_time/timeout_helper.c
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/timeout_helper.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/timeout_helper.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/common/pico_time/timeout_helper.c > CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/timeout_helper.c.i
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/common/pico_time/timeout_helper.c > CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/timeout_helper.c.i
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/timeout_helper.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/timeout_helper.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/common/pico_time/timeout_helper.c -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/timeout_helper.c.s
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/common/pico_time/timeout_helper.c -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/timeout_helper.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_timer/timer.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_timer/timer.c.obj: ../src/rp2_common/hardware_timer/timer.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_timer/timer.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_timer/timer.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_timer/timer.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_timer/timer.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_timer/timer.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_timer/timer.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_timer/timer.c.o: ../src/rp2_common/hardware_timer/timer.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_timer/timer.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_timer/timer.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_timer/timer.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_timer/timer.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_timer/timer.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_timer/timer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_timer/timer.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_timer/timer.c.i
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_timer/timer.c.i
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_timer/timer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_timer/timer.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_timer/timer.c.s
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_timer/timer.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/datetime.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/datetime.c.obj: ../src/common/pico_util/datetime.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/datetime.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/datetime.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/datetime.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/datetime.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/datetime.c.obj -c /home/shu/pico/pico-sdk/src/common/pico_util/datetime.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/datetime.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/datetime.c.o: ../src/common/pico_util/datetime.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/datetime.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/datetime.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/datetime.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/datetime.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/datetime.c.o -c /home/shu/pico/pico-sdk/src/common/pico_util/datetime.c
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/datetime.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/datetime.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/common/pico_util/datetime.c > CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/datetime.c.i
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/common/pico_util/datetime.c > CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/datetime.c.i
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/datetime.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/datetime.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/common/pico_util/datetime.c -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/datetime.c.s
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/common/pico_util/datetime.c -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/datetime.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/pheap.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/pheap.c.obj: ../src/common/pico_util/pheap.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/pheap.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/pheap.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/pheap.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/pheap.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/pheap.c.obj -c /home/shu/pico/pico-sdk/src/common/pico_util/pheap.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/fixed_bitset.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/fixed_bitset.c.o: ../src/common/pico_util/fixed_bitset.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/fixed_bitset.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/fixed_bitset.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/fixed_bitset.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/fixed_bitset.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/fixed_bitset.c.o -c /home/shu/pico/pico-sdk/src/common/pico_util/fixed_bitset.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/fixed_bitset.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/fixed_bitset.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/common/pico_util/fixed_bitset.c > CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/fixed_bitset.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/fixed_bitset.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/fixed_bitset.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/common/pico_util/fixed_bitset.c -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/fixed_bitset.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/pheap.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/pheap.c.o: ../src/common/pico_util/pheap.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/pheap.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/pheap.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/pheap.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/pheap.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/pheap.c.o -c /home/shu/pico/pico-sdk/src/common/pico_util/pheap.c
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/pheap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/pheap.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/common/pico_util/pheap.c > CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/pheap.c.i
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/common/pico_util/pheap.c > CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/pheap.c.i
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/pheap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/pheap.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/common/pico_util/pheap.c -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/pheap.c.s
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/common/pico_util/pheap.c -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/pheap.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/queue.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/queue.c.obj: ../src/common/pico_util/queue.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/queue.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/queue.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/queue.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/queue.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/queue.c.obj -c /home/shu/pico/pico-sdk/src/common/pico_util/queue.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/queue.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/queue.c.o: ../src/common/pico_util/queue.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/queue.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/queue.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/queue.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/queue.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/queue.c.o -c /home/shu/pico/pico-sdk/src/common/pico_util/queue.c
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/queue.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/queue.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/common/pico_util/queue.c > CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/queue.c.i
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/common/pico_util/queue.c > CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/queue.c.i
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/queue.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/queue.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/common/pico_util/queue.c -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/queue.c.s
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/common/pico_util/queue.c -o CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/queue.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_clocks/clocks.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_clocks/clocks.c.obj: ../src/rp2_common/hardware_clocks/clocks.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_clocks/clocks.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_clocks/clocks.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_clocks/clocks.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_clocks/clocks.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_clocks/clocks.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_boot_lock/boot_lock.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_boot_lock/boot_lock.c.o: ../src/rp2_common/hardware_boot_lock/boot_lock.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_boot_lock/boot_lock.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_boot_lock/boot_lock.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_boot_lock/boot_lock.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_boot_lock/boot_lock.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_boot_lock/boot_lock.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_boot_lock/boot_lock.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_boot_lock/boot_lock.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_boot_lock/boot_lock.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_boot_lock/boot_lock.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_boot_lock/boot_lock.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_boot_lock/boot_lock.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_boot_lock/boot_lock.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_clocks/clocks.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_clocks/clocks.c.o: ../src/rp2_common/hardware_clocks/clocks.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_clocks/clocks.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_clocks/clocks.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_clocks/clocks.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_clocks/clocks.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_clocks/clocks.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_clocks/clocks.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_clocks/clocks.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_clocks/clocks.c.i
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_clocks/clocks.c.i
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_clocks/clocks.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_clocks/clocks.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_clocks/clocks.c.s
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_clocks/clocks.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pll/pll.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pll/pll.c.obj: ../src/rp2_common/hardware_pll/pll.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pll/pll.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pll/pll.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pll/pll.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pll/pll.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pll/pll.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pll/pll.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pll/pll.c.o: ../src/rp2_common/hardware_pll/pll.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pll/pll.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pll/pll.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pll/pll.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pll/pll.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pll/pll.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pll/pll.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pll/pll.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pll/pll.c.i
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pll/pll.c.i
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pll/pll.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pll/pll.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pll/pll.c.s
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pll/pll.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_vreg/vreg.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_vreg/vreg.c.obj: ../src/rp2_common/hardware_vreg/vreg.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_vreg/vreg.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_vreg/vreg.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_vreg/vreg.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_vreg/vreg.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_vreg/vreg.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_vreg/vreg.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_vreg/vreg.c.o: ../src/rp2_common/hardware_vreg/vreg.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_vreg/vreg.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_vreg/vreg.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_vreg/vreg.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_vreg/vreg.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_vreg/vreg.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_vreg/vreg.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_vreg/vreg.c.i
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_vreg/vreg.c.i
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_vreg/vreg.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_vreg/vreg.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_vreg/vreg.c.s
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_vreg/vreg.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_watchdog/watchdog.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_watchdog/watchdog.c.obj: ../src/rp2_common/hardware_watchdog/watchdog.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_watchdog/watchdog.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_watchdog/watchdog.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_watchdog/watchdog.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_watchdog/watchdog.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_watchdog/watchdog.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_watchdog/watchdog.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_watchdog/watchdog.c.o: ../src/rp2_common/hardware_watchdog/watchdog.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_watchdog/watchdog.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_watchdog/watchdog.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_watchdog/watchdog.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_watchdog/watchdog.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_watchdog/watchdog.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_watchdog/watchdog.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_watchdog/watchdog.c.i
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_watchdog/watchdog.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_watchdog/watchdog.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_watchdog/watchdog.c.s
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_watchdog/watchdog.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.obj: ../src/rp2_common/hardware_xosc/xosc.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_ticks/ticks.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_ticks/ticks.c.o: ../src/rp2_common/hardware_ticks/ticks.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_ticks/ticks.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_ticks/ticks.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_ticks/ticks.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_ticks/ticks.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_ticks/ticks.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.i
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_ticks/ticks.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_ticks/ticks.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_ticks/ticks.c.i
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.s
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_ticks/ticks.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_ticks/ticks.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_ticks/ticks.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_ticks/ticks.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_divider/divider.S.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_divider/divider.S.obj: ../src/rp2_common/hardware_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building ASM object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_divider/divider.S.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_divider/divider.S.obj   -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_divider/divider.S.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_divider/divider.S.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_divider/divider.S.i
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_divider/divider.S.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling ASM source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_divider/divider.S.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_divider/divider.S.s
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.obj: ../src/rp2_common/hardware_exception/exception.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.i
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.s
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.obj: ../src/rp2_common/hardware_dma/dma.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.i
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.s
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.obj: ../src/rp2_common/hardware_flash/flash.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.i
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.s
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom.c.obj: ../src/rp2_common/pico_bootrom/bootrom.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom.c.o: ../src/rp2_common/pico_bootrom/bootrom.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom.c.i
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom.c.i
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom.c.s
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.obj: ../src/rp2_common/hardware_i2c/i2c.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom_lock.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom_lock.c.o: ../src/rp2_common/pico_bootrom/bootrom_lock.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom_lock.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom_lock.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom_lock.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom_lock.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom_lock.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.i
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom_lock.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom_lock.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom_lock.c.i
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.s
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom_lock.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom_lock.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom_lock.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom_lock.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.obj: ../src/rp2_common/hardware_interp/interp.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.i
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.s
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.obj: ../src/rp2_common/hardware_pio/pio.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.i
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.s
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.obj: ../src/rp2_common/hardware_rtc/rtc.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.c
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.i
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.s
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.obj: ../src/rp2_common/hardware_uart/uart.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.i
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.s
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.obj: ../src/rp2_common/hardware_spi/spi.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.i
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.s
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: ../src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building ASM object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj   -c /home/shu/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling ASM source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.s
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj: ../src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.i
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.s
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_divider/divider.S.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_divider/divider.S.obj: ../src/rp2_common/pico_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building ASM object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_divider/divider.S.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_divider/divider.S.obj   -c /home/shu/pico/pico-sdk/src/rp2_common/pico_divider/divider.S
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_divider/divider.S.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_divider/divider.S.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_divider/divider.S > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_divider/divider.S.i
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_divider/divider.S.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling ASM source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_divider/divider.S.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_divider/divider.S -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_divider/divider.S.s
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_aeabi.S.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_aeabi.S.obj: ../src/rp2_common/pico_double/double_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building ASM object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_aeabi.S.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_aeabi.S.obj   -c /home/shu/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_aeabi.S.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_aeabi.S.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_aeabi.S.i
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_aeabi.S.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling ASM source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_aeabi.S.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_aeabi.S.s
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom.c.obj: ../src/rp2_common/pico_double/double_init_rom.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom.c.i
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom.c.s
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.obj: ../src/rp2_common/pico_double/double_math.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/pico_double/double_math.c
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_double/double_math.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.i
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_double/double_math.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.s
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: ../src/rp2_common/pico_double/double_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building ASM object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_v1_rom_shim.S.obj   -c /home/shu/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_v1_rom_shim.S.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_v1_rom_shim.S.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_v1_rom_shim.S.i
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_v1_rom_shim.S.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling ASM source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_v1_rom_shim.S.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_v1_rom_shim.S.s
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: ../src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_flash/flash.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_flash/flash.c.obj: ../src/rp2_common/pico_flash/flash.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_flash/flash.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_flash/flash.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_flash/flash.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_flash/flash.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_flash/flash.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/pico_flash/flash.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_flash/flash.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_flash/flash.c.o: ../src/rp2_common/pico_flash/flash.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_flash/flash.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_flash/flash.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_flash/flash.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_flash/flash.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_flash/flash.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_flash/flash.c
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_flash/flash.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_flash/flash.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_flash/flash.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_flash/flash.c.i
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_flash/flash.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_flash/flash.c.i
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_flash/flash.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_flash/flash.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_flash/flash.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_flash/flash.c.s
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_flash/flash.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_flash/flash.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_aeabi.S.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_aeabi.S.obj: ../src/rp2_common/pico_float/float_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building ASM object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_aeabi.S.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_aeabi.S.obj   -c /home/shu/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.o: ../src/rp2_common/hardware_xosc/xosc.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_aeabi.S.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_aeabi.S.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_aeabi.S.i
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.i
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_aeabi.S.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling ASM source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_aeabi.S.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_aeabi.S.s
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom.c.obj: ../src/rp2_common/pico_float/float_init_rom.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_divider/divider.S.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_divider/divider.S.o: ../src/rp2_common/hardware_divider/divider.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building ASM object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_divider/divider.S.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_divider/divider.S.o   -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom.c.i
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_divider/divider.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_divider/divider.S.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_divider/divider.S.i
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom.c.s
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_divider/divider.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling ASM source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_divider/divider.S.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_divider/divider.S.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_math.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_math.c.obj: ../src/rp2_common/pico_float/float_math.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_math.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_math.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_math.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_math.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_math.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/pico_float/float_math.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.o: ../src/rp2_common/hardware_dma/dma.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_dma/dma.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.o: ../src/rp2_common/hardware_exception/exception.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_exception/exception.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.o: ../src/rp2_common/hardware_flash/flash.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xip_cache/xip_cache.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xip_cache/xip_cache.c.o: ../src/rp2_common/hardware_xip_cache/xip_cache.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xip_cache/xip_cache.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xip_cache/xip_cache.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xip_cache/xip_cache.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xip_cache/xip_cache.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xip_cache/xip_cache.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xip_cache/xip_cache.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xip_cache/xip_cache.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xip_cache/xip_cache.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xip_cache/xip_cache.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xip_cache/xip_cache.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_xip_cache/xip_cache.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xip_cache/xip_cache.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.o: ../src/rp2_common/hardware_i2c/i2c.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.o: ../src/rp2_common/hardware_interp/interp.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_interp/interp.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.o: ../src/rp2_common/hardware_pio/pio.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.o: ../src/rp2_common/hardware_rtc/rtc.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.o: ../src/rp2_common/hardware_spi/spi.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_spi/spi.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.o: ../src/rp2_common/hardware_uart/uart.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_aon_timer/aon_timer.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_aon_timer/aon_timer.c.o: ../src/rp2_common/pico_aon_timer/aon_timer.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_aon_timer/aon_timer.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_aon_timer/aon_timer.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_aon_timer/aon_timer.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_aon_timer/aon_timer.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_aon_timer/aon_timer.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_aon_timer/aon_timer.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_aon_timer/aon_timer.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_aon_timer/aon_timer.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_aon_timer/aon_timer.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_aon_timer/aon_timer.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_aon_timer/aon_timer.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_aon_timer/aon_timer.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_aon_timer/aon_timer.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_aon_timer/aon_timer.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o: ../src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building ASM object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o   -c /home/shu/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling ASM source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.o: ../src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_divider/divider_hardware.S.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_divider/divider_hardware.S.o: ../src/rp2_common/pico_divider/divider_hardware.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building ASM object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_divider/divider_hardware.S.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_divider/divider_hardware.S.o   -c /home/shu/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_divider/divider_hardware.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_divider/divider_hardware.S.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_divider/divider_hardware.S.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_divider/divider_hardware.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling ASM source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_divider/divider_hardware.S.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_divider/divider_hardware.S -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_divider/divider_hardware.S.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_aeabi_rp2040.S.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_aeabi_rp2040.S.o: ../src/rp2_common/pico_double/double_aeabi_rp2040.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building ASM object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_aeabi_rp2040.S.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_aeabi_rp2040.S.o   -c /home/shu/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_aeabi_rp2040.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_aeabi_rp2040.S.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_aeabi_rp2040.S.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_aeabi_rp2040.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling ASM source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_aeabi_rp2040.S.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi_rp2040.S -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_aeabi_rp2040.S.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: ../src/rp2_common/pico_double/double_init_rom_rp2040.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom_rp2040.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom_rp2040.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom_rp2040.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom_rp2040.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom_rp2040.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom_rp2040.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom_rp2040.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom_rp2040.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom_rp2040.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom_rp2040.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom_rp2040.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom_rp2040.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.o: ../src/rp2_common/pico_double/double_math.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_double/double_math.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_double/double_math.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_double/double_math.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o: ../src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building ASM object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o   -c /home/shu/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling ASM source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: ../src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_aeabi_rp2040.S.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_aeabi_rp2040.S.o: ../src/rp2_common/pico_float/float_aeabi_rp2040.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building ASM object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_aeabi_rp2040.S.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_aeabi_rp2040.S.o   -c /home/shu/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_aeabi_rp2040.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_aeabi_rp2040.S.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_aeabi_rp2040.S.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_aeabi_rp2040.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling ASM source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_aeabi_rp2040.S.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi_rp2040.S -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_aeabi_rp2040.S.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: ../src/rp2_common/pico_float/float_init_rom_rp2040.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom_rp2040.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom_rp2040.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom_rp2040.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom_rp2040.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom_rp2040.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom_rp2040.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom_rp2040.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom_rp2040.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom_rp2040.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom_rp2040.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom_rp2040.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom_rp2040.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_math.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_math.c.o: ../src/rp2_common/pico_float/float_math.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_math.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_math.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_math.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_math.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_math.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_float/float_math.c
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_math.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_math.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_float/float_math.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_math.c.i
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_float/float_math.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_math.c.i
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_math.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_math.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_float/float_math.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_math.c.s
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_float/float_math.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_math.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: ../src/rp2_common/pico_float/float_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building ASM object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_v1_rom_shim.S.obj   -c /home/shu/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o: ../src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building ASM object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o   -c /home/shu/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_v1_rom_shim.S.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_v1_rom_shim.S.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_v1_rom_shim.S.i
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.i
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_v1_rom_shim.S.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling ASM source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_v1_rom_shim.S.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_v1_rom_shim.S.s
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling ASM source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_i2c_slave/i2c_slave.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_i2c_slave/i2c_slave.c.obj: ../src/rp2_common/pico_i2c_slave/i2c_slave.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_i2c_slave/i2c_slave.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_i2c_slave/i2c_slave.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_i2c_slave/i2c_slave.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_i2c_slave/i2c_slave.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_i2c_slave/i2c_slave.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/pico_i2c_slave/i2c_slave.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_i2c_slave/i2c_slave.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_i2c_slave/i2c_slave.c.o: ../src/rp2_common/pico_i2c_slave/i2c_slave.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_i2c_slave/i2c_slave.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_i2c_slave/i2c_slave.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_i2c_slave/i2c_slave.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_i2c_slave/i2c_slave.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_i2c_slave/i2c_slave.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_i2c_slave/i2c_slave.c
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_i2c_slave/i2c_slave.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_i2c_slave/i2c_slave.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_i2c_slave/i2c_slave.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_i2c_slave/i2c_slave.c.i
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_i2c_slave/i2c_slave.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_i2c_slave/i2c_slave.c.i
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_i2c_slave/i2c_slave.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_i2c_slave/i2c_slave.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_i2c_slave/i2c_slave.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_i2c_slave/i2c_slave.c.s
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_i2c_slave/i2c_slave.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_i2c_slave/i2c_slave.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: ../src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building ASM object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj   -c /home/shu/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o: ../src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building ASM object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o   -c /home/shu/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.i
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.i
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling ASM source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.s
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/pico_malloc.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/pico_malloc.c.obj: ../src/rp2_common/pico_malloc/pico_malloc.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/pico_malloc.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/pico_malloc.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/pico_malloc.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/pico_malloc.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/pico_malloc.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_low_power/low_power.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_low_power/low_power.c.o: ../src/rp2_common/pico_low_power/low_power.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_low_power/low_power.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_low_power/low_power.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_low_power/low_power.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_low_power/low_power.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_low_power/low_power.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_low_power/low_power.c
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/pico_malloc.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/pico_malloc.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/pico_malloc.c.i
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_low_power/low_power.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_low_power/low_power.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_low_power/low_power.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_low_power/low_power.c.i
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/pico_malloc.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/pico_malloc.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/pico_malloc.c.s
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_low_power/low_power.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_low_power/low_power.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_low_power/low_power.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_low_power/low_power.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: ../src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building ASM object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj   -c /home/shu/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rosc/rosc.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rosc/rosc.c.o: ../src/rp2_common/hardware_rosc/rosc.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rosc/rosc.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rosc/rosc.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rosc/rosc.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rosc/rosc.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rosc/rosc.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/hardware_rosc/rosc.c
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.i
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rosc/rosc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rosc/rosc.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/hardware_rosc/rosc.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rosc/rosc.c.i
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling ASM source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.s
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rosc/rosc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rosc/rosc.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/hardware_rosc/rosc.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rosc/rosc.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.obj: ../src/rp2_common/pico_multicore/multicore.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.i
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.s
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.obj: ../src/rp2_common/pico_rand/rand.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/pico_rand/rand.c
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_rand/rand.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.i
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_rand/rand.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.s
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.obj: ../src/rp2_common/pico_unique_id/unique_id.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.i
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.s
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.obj: ../src/rp2_common/pico_stdlib/stdlib.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.i
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.s
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.obj: ../src/rp2_common/pico_runtime/runtime.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.i
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.s
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.obj: ../src/rp2_common/pico_printf/printf.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/pico_printf/printf.c
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_printf/printf.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.i
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_printf/printf.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.s
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/crt0.S.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/crt0.S.obj: ../src/rp2_common/pico_standard_link/crt0.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building ASM object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/crt0.S.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/crt0.S.obj   -c /home/shu/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/crt0.S.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/crt0.S.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/crt0.S.i
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/crt0.S.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling ASM source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/crt0.S.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/crt0.S.s
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/new_delete.cpp.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/new_delete.cpp.obj: ../src/rp2_common/pico_standard_link/new_delete.cpp
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/new_delete.cpp.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/new_delete.cpp.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/new_delete.cpp.obj -c /home/shu/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/new_delete.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/new_delete.cpp.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/new_delete.cpp.i
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/new_delete.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/new_delete.cpp.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/new_delete.cpp.s
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/binary_info.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/binary_info.c.obj: ../src/rp2_common/pico_standard_link/binary_info.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/binary_info.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/binary_info.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/binary_info.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/binary_info.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/binary_info.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/binary_info.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/binary_info.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/binary_info.c.i
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/binary_info.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/binary_info.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/binary_info.c.s
-
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio/stdio.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio/stdio.c.obj: ../src/rp2_common/pico_stdio/stdio.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio/stdio.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio/stdio.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio/stdio.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio/stdio.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio/stdio.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio/stdio.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio/stdio.c.o: ../src/rp2_common/pico_stdio/stdio.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio/stdio.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio/stdio.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio/stdio.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio/stdio.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio/stdio.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio/stdio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio/stdio.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio/stdio.c.i
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio/stdio.c.i
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio/stdio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio/stdio.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio/stdio.c.s
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio/stdio.c.s
 
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: ../src/rp2_common/pico_stdio_uart/stdio_uart.c
-test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj -c /home/shu/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.o: ../src/rp2_common/pico_printf/printf.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_printf/printf.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_printf/printf.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_printf/printf.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio_uart/stdio_uart.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio_uart/stdio_uart.c.o: ../src/rp2_common/pico_stdio_uart/stdio_uart.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio_uart/stdio_uart.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio_uart/stdio_uart.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio_uart/stdio_uart.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio_uart/stdio_uart.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio_uart/stdio_uart.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio_uart/stdio_uart.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio_uart/stdio_uart.c.i"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio_uart/stdio_uart.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio_uart/stdio_uart.c.s"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/malloc.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/malloc.c.o: ../src/rp2_common/pico_malloc/malloc.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/malloc.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/malloc.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/malloc.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/malloc.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/malloc.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/malloc.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/malloc.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/malloc.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/malloc.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/malloc.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_malloc/malloc.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/malloc.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o: ../src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building ASM object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o   -c /home/shu/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling ASM source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.o: ../src/rp2_common/pico_multicore/multicore.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.o: ../src/rp2_common/pico_rand/rand.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_rand/rand.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_rand/rand.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_rand/rand.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.o: ../src/rp2_common/pico_unique_id/unique_id.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.o: ../src/rp2_common/pico_runtime/runtime.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init.c.o: ../src/rp2_common/pico_runtime_init/runtime_init.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: ../src/rp2_common/pico_runtime_init/runtime_init_clocks.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_clocks.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: ../src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_atomic/atomic.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_atomic/atomic.c.o: ../src/rp2_common/pico_atomic/atomic.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_atomic/atomic.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_atomic/atomic.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_atomic/atomic.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_atomic/atomic.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_atomic/atomic.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_atomic/atomic.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_atomic/atomic.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_atomic/atomic.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_atomic/atomic.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_atomic/atomic.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_atomic/atomic.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_atomic/atomic.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_cxx_options/new_delete.cpp.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_cxx_options/new_delete.cpp.o: ../src/rp2_common/pico_cxx_options/new_delete.cpp
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_cxx_options/new_delete.cpp.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_cxx_options/new_delete.cpp.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_cxx_options/new_delete.cpp.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_cxx_options/new_delete.cpp.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_cxx_options/new_delete.cpp.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_cxx_options/new_delete.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_cxx_options/new_delete.cpp.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_cxx_options/new_delete.cpp.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_cxx_options/new_delete.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_cxx_options/new_delete.cpp.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_cxx_options/new_delete.cpp -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_cxx_options/new_delete.cpp.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: ../src/rp2_common/pico_standard_binary_info/standard_binary_info.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_standard_binary_info/standard_binary_info.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_crt0/crt0.S.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_crt0/crt0.S.o: ../src/rp2_common/pico_crt0/crt0.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building ASM object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_crt0/crt0.S.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_crt0/crt0.S.o   -c /home/shu/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_crt0/crt0.S.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing ASM source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_crt0/crt0.S.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_crt0/crt0.S.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_crt0/crt0.S.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling ASM source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_crt0/crt0.S.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_crt0/crt0.S -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_crt0/crt0.S.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/newlib_interface.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/newlib_interface.c.o: ../src/rp2_common/pico_clib_interface/newlib_interface.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/newlib_interface.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/newlib_interface.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/newlib_interface.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/newlib_interface.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/newlib_interface.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/newlib_interface.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/newlib_interface.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/newlib_interface.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/newlib_interface.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/newlib_interface.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_clib_interface/newlib_interface.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/newlib_interface.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/cxa_guard.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/cxa_guard.c.o: ../src/rp2_common/pico_clib_interface/cxa_guard.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/cxa_guard.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/cxa_guard.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/cxa_guard.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/cxa_guard.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/cxa_guard.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_clib_interface/cxa_guard.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/cxa_guard.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/cxa_guard.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_clib_interface/cxa_guard.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/cxa_guard.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/cxa_guard.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/cxa_guard.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_clib_interface/cxa_guard.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/cxa_guard.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_thread_local/thread_local.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_thread_local/thread_local.c.o: ../src/rp2_common/pico_thread_local/thread_local.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_thread_local/thread_local.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_thread_local/thread_local.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_thread_local/thread_local.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_thread_local/thread_local.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_thread_local/thread_local.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_thread_local/thread_local.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_thread_local/thread_local.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_thread_local/thread_local.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_thread_local/thread_local.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_thread_local/thread_local.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_thread_local/thread_local.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_thread_local/thread_local.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_status_led/status_led.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_status_led/status_led.c.o: ../src/rp2_common/pico_status_led/status_led.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_status_led/status_led.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_status_led/status_led.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_status_led/status_led.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_status_led/status_led.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_status_led/status_led.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_status_led/status_led.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_status_led/status_led.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_status_led/status_led.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_status_led/status_led.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_status_led/status_led.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_status_led/status_led.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_status_led/status_led.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_status_led/status_led.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_status_led/status_led.c.s
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/flags.make
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.o: ../src/rp2_common/pico_stdlib/stdlib.c
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.o: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.o"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.o -MF CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.o.d -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.o -c /home/shu/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.i"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/shu/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c > CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.i
+
+test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.s"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/shu/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c -o CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.s
 
 # Object files for target kitchen_sink
 kitchen_sink_OBJECTS = \
-"CMakeFiles/kitchen_sink.dir/kitchen_sink.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_adc/adc.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform/platform.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_claim/claim.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync/sync.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_gpio/gpio.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq_handler_chain.S.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/sem.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/lock_core.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/mutex.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/critical_section.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/time.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/timeout_helper.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_timer/timer.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/datetime.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/pheap.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/queue.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_clocks/clocks.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pll/pll.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_vreg/vreg.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_watchdog/watchdog.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_divider/divider.S.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_divider/divider.S.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_aeabi.S.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_v1_rom_shim.S.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_flash/flash.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_aeabi.S.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_math.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_v1_rom_shim.S.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_i2c_slave/i2c_slave.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/pico_malloc.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/crt0.S.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/new_delete.cpp.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/binary_info.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio/stdio.c.obj" \
-"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
+"CMakeFiles/kitchen_sink.dir/kitchen_sink.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_adc/adc.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2040/pico_platform/platform.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_common/common.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_panic/panic.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_panic/custom_panic_function.S.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/common/hardware_claim/claim.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync/sync.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_gpio/gpio.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq_handler_chain.S.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/sem.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/lock_core.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/mutex.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/critical_section.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/time.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/timeout_helper.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_timer/timer.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/datetime.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/fixed_bitset.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/pheap.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/queue.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_boot_lock/boot_lock.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_clocks/clocks.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pll/pll.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_vreg/vreg.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_watchdog/watchdog.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_ticks/ticks.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom_lock.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_flash/flash.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_divider/divider.S.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xip_cache/xip_cache.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_aon_timer/aon_timer.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_divider/divider_hardware.S.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_aeabi_rp2040.S.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom_rp2040.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_aeabi_rp2040.S.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom_rp2040.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_math.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_i2c_slave/i2c_slave.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_low_power/low_power.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rosc/rosc.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio/stdio.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio_uart/stdio_uart.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/malloc.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_atomic/atomic.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_cxx_options/new_delete.cpp.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_crt0/crt0.S.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/newlib_interface.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/cxa_guard.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_thread_local/thread_local.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_status_led/status_led.c.o" \
+"CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.o"
 
 # External object files for target kitchen_sink
 kitchen_sink_EXTERNAL_OBJECTS =
 
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/kitchen_sink.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_adc/adc.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform/platform.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_claim/claim.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync/sync.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_gpio/gpio.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/sem.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/lock_core.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/mutex.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/critical_section.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/time.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/timeout_helper.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_timer/timer.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/datetime.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/pheap.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/queue.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_clocks/clocks.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pll/pll.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_vreg/vreg.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_watchdog/watchdog.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_divider/divider.S.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_divider/divider.S.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_aeabi.S.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_flash/flash.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_aeabi.S.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_math.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_i2c_slave/i2c_slave.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/pico_malloc.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/crt0.S.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/new_delete.cpp.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_link/binary_info.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio/stdio.c.obj
-test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/kitchen_sink.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_adc/adc.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2040/pico_platform/platform.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_common/common.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_panic/panic.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_platform_panic/custom_panic_function.S.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/hardware_claim/claim.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync/sync.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_sync_spin_lock/sync_spin_lock.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_gpio/gpio.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_irq/irq_handler_chain.S.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/sem.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/lock_core.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/mutex.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_sync/critical_section.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/time.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_time/timeout_helper.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_timer/timer.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/datetime.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/fixed_bitset.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/pheap.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/common/pico_util/queue.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_boot_lock/boot_lock.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_clocks/clocks.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pll/pll.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_vreg/vreg.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_watchdog/watchdog.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_ticks/ticks.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootrom/bootrom_lock.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_flash/flash.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xosc/xosc.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_divider/divider.S.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_dma/dma.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_exception/exception.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_flash/flash.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_xip_cache/xip_cache.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_i2c/i2c.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_interp/interp.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_pio/pio.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rtc/rtc.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_spi/spi.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_uart/uart.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_aon_timer/aon_timer.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_bootsel_via_double_reset/pico_bootsel_via_double_reset.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_divider/divider_hardware.S.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_aeabi_rp2040.S.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_init_rom_rp2040.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_math.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_double/double_v1_rom_shim_rp2040.S.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_aeabi_rp2040.S.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_init_rom_rp2040.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_math.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_float/float_v1_rom_shim_rp2040.S.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_i2c_slave/i2c_slave.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_low_power/low_power.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/hardware_rosc/rosc.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio/stdio.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_printf/printf.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdio_uart/stdio_uart.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_malloc/malloc.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_multicore/multicore.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_rand/rand.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_unique_id/unique_id.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime/runtime.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_clocks.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_runtime_init/runtime_init_stack_guard.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_atomic/atomic.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_cxx_options/new_delete.cpp.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_standard_binary_info/standard_binary_info.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_crt0/crt0.S.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/newlib_interface.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_clib_interface/cxa_guard.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_thread_local/thread_local.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_status_led/status_led.c.o
+test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/__/__/src/rp2_common/pico_stdlib/stdlib.c.o
 test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/build.make
-test/kitchen_sink/kitchen_sink.elf: src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
+test/kitchen_sink/kitchen_sink.elf: src/rp2040/boot_stage2/CMakeFiles/bs2_default_library.dir/bs2_default_padded_checksummed.S.o
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2040/pico_platform/memmap_default.ld
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2040/pico_platform/script_include/memory_psram.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2040/pico_platform/script_include/section_boot2.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2040/pico_platform/script_include/section_platform_end.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2040/pico_platform/script_include/sections_default_text.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2040/pico_platform/script_include/sections_psram.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/default_rodata_excludes.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/default_text_excludes.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/memmap_default.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/memory_aliases_flash.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/memory_extra.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/memory_flash.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/memory_generated.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/memory_ram.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/memory_scratch.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/memory_xip_ram.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/section_binary_info.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/section_default_data.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/section_default_rodata.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/section_default_text.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/section_end.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/section_extra_post_data.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/section_extra_post_end.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/section_extra_post_platform_end.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/section_extra_post_scratch.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/section_extra_post_text.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/section_flash_begin.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/section_flash_end.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/section_generated_post_data.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/section_generated_post_end.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/section_generated_post_platform_end.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/section_generated_post_scratch.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/section_generated_post_text.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/section_heap.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/section_persistent_data.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/section_ram_vector_table.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/section_tls.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/section_uninitialized_data.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/section_xip_ram.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/sections_arm_ex.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/sections_default.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/sections_default_data.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/sections_scratch.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/sections_stack.incl
+test/kitchen_sink/kitchen_sink.elf: ../src/rp2_common/pico_standard_link/script_include/set_memory_locations.incl
 test/kitchen_sink/kitchen_sink.elf: test/kitchen_sink/CMakeFiles/kitchen_sink.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/shu/pico/pico-sdk/Benzen_new/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Linking CXX executable kitchen_sink.elf"
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kitchen_sink.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-objcopy -Oihex /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink/kitchen_sink.elf kitchen_sink.hex
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-objcopy -Obinary /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink/kitchen_sink.elf kitchen_sink.bin
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-objdump -h /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink/kitchen_sink.elf > kitchen_sink.dis
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && /usr/bin/arm-none-eabi-objdump -d /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink/kitchen_sink.elf >> kitchen_sink.dis
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && ../../elf2uf2/elf2uf2 /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink/kitchen_sink.elf kitchen_sink.uf2
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/shu/pico/pico-sdk/naname_coputer_mixing/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Linking CXX executable kitchen_sink.elf"
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kitchen_sink.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-objdump -h /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink/kitchen_sink.elf > kitchen_sink.dis
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-objdump -d /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink/kitchen_sink.elf >> kitchen_sink.dis
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-objcopy -Oihex /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink/kitchen_sink.elf kitchen_sink.hex
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && /usr/bin/arm-none-eabi-objcopy -Obinary /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink/kitchen_sink.elf kitchen_sink.bin
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && ../../_deps/picotool/picotool uf2 convert --quiet /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink/kitchen_sink.elf kitchen_sink.uf2 --family rp2040
 
 # Rule to build all files generated by this target.
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/build: test/kitchen_sink/kitchen_sink.elf
 .PHONY : test/kitchen_sink/CMakeFiles/kitchen_sink.dir/build
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/clean:
-	cd /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink && $(CMAKE_COMMAND) -P CMakeFiles/kitchen_sink.dir/cmake_clean.cmake
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink && $(CMAKE_COMMAND) -P CMakeFiles/kitchen_sink.dir/cmake_clean.cmake
 .PHONY : test/kitchen_sink/CMakeFiles/kitchen_sink.dir/clean
 
 test/kitchen_sink/CMakeFiles/kitchen_sink.dir/depend:
-	cd /home/shu/pico/pico-sdk/Benzen_new && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shu/pico/pico-sdk /home/shu/pico/pico-sdk/test/kitchen_sink /home/shu/pico/pico-sdk/Benzen_new /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink /home/shu/pico/pico-sdk/Benzen_new/test/kitchen_sink/CMakeFiles/kitchen_sink.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/shu/pico/pico-sdk/naname_coputer_mixing && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/shu/pico/pico-sdk /home/shu/pico/pico-sdk/test/kitchen_sink /home/shu/pico/pico-sdk/naname_coputer_mixing /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink /home/shu/pico/pico-sdk/naname_coputer_mixing/test/kitchen_sink/CMakeFiles/kitchen_sink.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : test/kitchen_sink/CMakeFiles/kitchen_sink.dir/depend
 
