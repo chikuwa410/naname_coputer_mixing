@@ -30,7 +30,8 @@
 // #define FLIP 4
 #define LOG 4
 #define REDCIRCLE 5
-#define LINETRACE 7
+#define LINETRACE 107
+#define TAKEOFF 6
 // #define T_ref_up 7
 #define ROCKING 100 //8
 #define HOVERING 8

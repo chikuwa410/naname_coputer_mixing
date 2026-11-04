@@ -28,7 +28,7 @@ uint16_t altitude_count = 0;
 float auto_mode = 0;
 float ideal;
 float hove_time = 0.0;
-float flying_mode = 0;
+float flying_mode = 1;
 float input = 0;
 Matrix<float, 3, 3> lotate_mat = MatrixXf::Zero(3, 3);
 float f_distance = 0;
@@ -161,7 +161,7 @@ uint16_t LogdataCounter = 0;
 uint8_t Logflag = 0;
 volatile uint8_t Logoutputflag = 0;
 float Log_time = 0.0;
-const uint8_t DATANUM = 50; // Log Data Number 33
+const uint8_t DATANUM = 52; // Log Data Number 33
 const uint32_t LOGDATANUM = 47890;
 float Logdata[LOGDATANUM] = {0.0};
 
@@ -492,42 +492,28 @@ void loop_400Hz(void)
 
 }
 
-
 void control_init(void)
 {
   acc_filter.set_parameter(0.005, 0.0025);
   Range_filter.set_parameter(0.08, 0.025);
   Angle_filter.set_parameter(0.08, 0.025);
   Velocity_filter.set_parameter(0.08, 0.025);
-
+  
   //rate_control
-
-  // p_pid.set_parameter( 0.6, 10000, 0.0038, 0.125, 0.0025);//3.4
-  // q_pid.set_parameter( 0.6, 10000, 0.0045, 0.125, 0.0025);//3.8
-  // r_pid.set_parameter( 0.3, 100000, 0.0056, 0.125, 0.0025);//9.4
-  // //Angle control
-  // phi_pid.set_parameter  ( 5.0, 1000, 0.0, 0.125, 0.01);//6.0
-  // theta_pid.set_parameter( 5.0, 1000, 0.0, 0.125, 0.01);//6.0
-  // psi_pid.set_parameter  ( 0.0, 1000, 0.0, 0, 0.01);
-  
-  // p_pid.set_parameter( 0.32, 1000, 0.001, 0.125, 0.0025);//3.4
-  // q_pid.set_parameter( 0.32, 1000, 0.001, 0.125, 0.0025);//3.8
-  // r_pid.set_parameter( 0.1, 1000, 0.00, 0.125, 0.0025);//9.4
-  
   p_pid.set_parameter( 0.35, 1000, 0.0011, 0.125, 0.0025);//3.4
   q_pid.set_parameter( 0.26, 1000, 0.0006, 0.125, 0.0025);//3.8
-  r_pid.set_parameter( 0.50, 100, 0.00, 0.125, 0.0025);//9.4
+  r_pid.set_parameter( 0.50, 1000, 0.00, 0.125, 0.0025);//9.4
   //Angle control
   phi_pid.set_parameter  ( 5.0, 1000, 0.0, 0.125, 0.01);//6.0
   theta_pid.set_parameter( 5.0, 1000, 0.0, 0.125, 0.01);//6.0
   psi_pid.set_parameter  ( 0.0, 1000, 0.0, 0, 0.01);
-
+  
   //location control
-  x_pid.set_parameter(0.01, 10000, 0.0, 0.125, 0.03);
-  y_pid.set_parameter(0.01, 10000, 0.0, 0.125, 0.03);
+  x_pid.set_parameter(1.0, 10000, 0.0, 0.125, 0.01);
+  y_pid.set_parameter(1.0, 10000, 0.0, 0.125, 0.01);
   //velocity control
-  vx_pid.set_parameter(0.01, 100000, 0.0, 0.125, 0.03);
-  vy_pid.set_parameter(0.01, 100000, 0.0, 0.125, 0.03);
+  vx_pid.set_parameter(1.0, 100000, 0.0, 0.125, 0.01);
+  vy_pid.set_parameter(1.0, 100000, 0.0, 0.125, 0.01);
 }
 
 uint8_t lock_com(void)
@@ -609,6 +595,68 @@ float lotate_altitude(float l_distance)
   return f_distance3;
 }
 
+void Auto_fly(void){
+  // Current i-26 safety adaptation. A zero timeout keeps auto flight disabled.
+
+  //test_Hovering();
+  if (flying_mode == 1){
+    Auto_takeoff();
+  }
+
+  else if(flying_mode == 2){
+    Hovering();
+  }
+
+}
+
+// //ホバリング
+void Hovering(void){
+
+  input = alt_PID(ideal);
+  T_ref = T_stick + (input);
+}
+
+// //自動着陸
+void Auto_landing(void){
+  if (Kalman_alt > 250)
+  {
+    ideal = ideal - 0.045;//高度の目標値更新のコード
+    if (ideal <= 0){
+      ideal = 0;
+    }
+    input = alt_PID(ideal);
+    T_ref = T_stick + (input);
+  }
+  else if(Kalman_alt <= 250){
+    T_ref = T_ref - 0.003;
+  }
+
+}
+
+//自動離陸
+void Auto_takeoff(void){
+
+  if (Kalman_alt <= 250){
+    if (T_ref < 3.4){
+      T_stick = T_stick + 0.0005;
+      T_ref = T_stick;
+    }
+    else {
+      T_stick = T_stick + 0.00002;
+      T_ref = T_stick;
+    }
+  }
+
+  if (Kalman_alt >= 650){//ここ変えてみる
+    ideal = 700;
+    // input = alt_PID(ideal);
+    // T_ref = T_stick + (input);
+    //Hovering();
+    flying_mode = 2;
+  }
+}
+
+// uint32_t countnow=0;
 
 void rate_control(void)
 {
@@ -642,54 +690,41 @@ void rate_control(void)
     Red_flag = 0;
   }
 
-
-  
+    
   // Control angle velocity
   
   p_rate = Wp - Pbias;
   q_rate = Wq - Qbias;
   r_rate = Wr - Rbias;
 
+    if(Chdata[TAKEOFF] < 200)
+  {
+         T_ref = 2.0 * (float)(Chdata[2]-CH3MIN)/(CH3MAX-CH3MIN);
 
-    if (Flight_mode == HOVERING) { 
-        
-      if (auto_mode_count == 0) {
-        auto_mode_count = 1;
-        ideal = Kalman_alt; // 目標高度ロック
-        T_stick = (float)(Chdata[2]-CH3MIN)/(CH3MAX-CH3MIN); 
-      }
+      //レバーによる切り替えが実現しているか
+        //  if(countnow%10==0){
+        //   printf("ノーマル");
+        //  }
 
-      // 40Hz（10回に1回）でカスケードPID実行
-      if (count_up >= 10) {
-        input = alt_PID(ideal); 
-        count_up = 0;
-      }
-      count_up++;
+  }
+  else if(Chdata[TAKEOFF] > 200  &&(Chdata[TAKEOFF] < 1500)){
+    Auto_fly();
+        // if(countnow%10==0){
+        //   printf("ホバー");
+        //  }
+  }     
+  else {
+    Auto_landing();
+        //   if(countnow%10==0){
+        //   printf("着陸");
+        //  }
+  }
 
-      T_ref = T_stick + input; // 基準推力 ＋ PID補正値
-
-    } else {
-    // NORMALモード（手動操縦）
-    auto_mode_count = 0;
-    count_up = 0;
-    input = 0;
-
-    // 手動に戻る際、PIDの積分ゴミをリセット（ekf.hppのグローバル変数）
-    integral = 0;
-    integral_v = 0;
-    differential = 0;
-    differential_v = 0;
-
-    T_ref = 20*(float)(Chdata[2]-CH3MIN)/(CH3MAX-CH3MIN);
-
-    }
-
-
-  // Error
+  // Error vel
   p_err = p_ref - p_rate;
   q_err = q_ref - q_rate;
   r_err = r_ref - r_rate;
-  vex_err = vel_x_ref -vx;
+  vex_err = vel_x_ref - vx;
   vey_err = vel_y_ref - vy;
 
   // PID
@@ -746,43 +781,43 @@ void rate_control(void)
   }
   // Motor Control(mixing)
  
- //フィードバックあり  
-float FR_th = ( 0.6440*Vex_com -1.1153*Vey_com +0.1725*T_ref )
+ //速度フィードバックあり  
+float FR_th = ( 0.6440*Vex_com -1.1153*Vey_com +1.725*T_ref )
              +(-1.4379*P_com +2.4904*Q_com +3.390*R_com);
 
-float MR_th = (-1.2879*Vex_com +0.0*Vey_com     +0.1725*T_ref )
+float MR_th = (-1.2879*Vex_com +0.0*Vey_com     +1.725*T_ref )
               +(-2.8757*P_com -0.0*Q_com -3.390*R_com);
 
-float RR_th = ( 0.6440*Vex_com +1.1153*Vey_com +0.1725*T_ref )
+float RR_th = ( 0.6440*Vex_com +1.1153*Vey_com +1.725*T_ref )
               +(-1.4379*P_com -2.4904*Q_com +3.390*R_com);
 
-float RL_th = ( 0.6440*Vex_com -1.1153*Vey_com +0.1725*T_ref )
+float RL_th = ( 0.6440*Vex_com -1.1153*Vey_com +1.725*T_ref )
               +( 1.4379*P_com -2.4904*Q_com -3.390*R_com);
 
-float ML_th = (-1.2879*Vex_com +0.0*Vey_com +0.1725*T_ref )
+float ML_th = (-1.2879*Vex_com +0.0*Vey_com +1.725*T_ref )
               +( 2.8757*P_com +0.0*Q_com +3.390*R_com);
 
-float FL_th = ( 0.6440*Vex_com +1.1153*Vey_com +0.1725*T_ref )
+float FL_th = ( 0.6440*Vex_com +1.1153*Vey_com +1.725*T_ref )
               +( 1.4379*P_com +2.4904*Q_com -3.390*R_com);
 
 
-// //フィードバックなし  
-// float FR_th = ( 0.6440*Pos_x_ref2 -1.1153*Pos_y_ref2 +0.1725*T_ref )
+// // // //速度制御 
+// float FR_th = ( 0.6440*vel_x_ref -1.1153*vel_y_ref +0.1725*T_ref )
 //              +(-1.4379*P_com +2.4904*Q_com +3.390*R_com);
 
-// float MR_th = (-1.2879*Pos_x_ref2 +0.0*   Pos_y_ref2 +0.1725*T_ref )
+// float MR_th = (-1.2879*vel_x_ref +0.0*   vel_y_ref +0.1725*T_ref )
 //               +(-2.8757*P_com -0.0*Q_com -3.390*R_com);
 
-// float RR_th = ( 0.6440*Pos_x_ref2 +1.1153*Pos_y_ref2  +0.1725*T_ref )
+// float RR_th = ( 0.6440*vel_x_ref +1.1153*vel_y_ref  +0.1725*T_ref )
 //               +(-1.4379*P_com -2.4904*Q_com +3.390*R_com);
 
-// float RL_th = ( 0.6440*Pos_x_ref2 -1.1153*Pos_y_ref2  +0.1725*T_ref )
+// float RL_th = ( 0.6440*vel_x_ref -1.1153*vel_y_ref  +0.1725*T_ref )
 //               +( 1.4379*P_com -2.4904*Q_com -3.390*R_com);
 
-// float ML_th = (-1.2879*Pos_x_ref2 +0.0*Pos_y_ref2 +0.1725*T_ref )
+// float ML_th = (-1.2879*vel_x_ref +0.0*vel_y_ref +0.1725*T_ref )
 //               +( 2.8757*P_com +0.0*Q_com +3.390*R_com);
 
-// float FL_th = ( 0.6440*Pos_x_ref2 +1.1153*Pos_y_ref2+0.1725*T_ref )
+// float FL_th = ( 0.6440*vel_x_ref +1.1153*vel_y_ref+0.1725*T_ref )
 //               +( 1.4379*P_com +2.4904*Q_com -3.390*R_com);
 
 //スケーリング
@@ -854,6 +889,8 @@ FL_duty = K_th * std::sqrt(FL_th*1513317);
     Pref = 0.0;
     Qref = 0.0;
     Rref = 0.0;
+    vel_x_ref=0.0;
+    vel_y_ref=0.0;
     Aileron_center = Chdata[3];
     Elevator_center = Chdata[1];
     Rudder_center = Chdata[0];
@@ -868,7 +905,6 @@ FL_duty = K_th * std::sqrt(FL_th*1513317);
 
       set_duty_fr(FR_duty);
       set_duty_fl(FL_duty);
-      
       set_duty_mr(MR_duty);
       set_duty_ml(ML_duty);
       set_duty_rr(RR_duty);
@@ -891,6 +927,7 @@ FL_duty = K_th * std::sqrt(FL_th*1513317);
   // Elapsed_time = Elapsed_time + 0.0025;
   // Logging
   // logging();
+  //countnow++;
 }
 
 extern PMW3901* flow;
@@ -927,22 +964,24 @@ void angle_control(void)
     Psi = Xn_est_3;
 
     // Get angle ref (manual flight)
-    if(Chdata[REDCIRCLE]>500)  {
     //feedback
-      Pos_y_ref =  -5* (float)(Chdata[3] - (CH4MAX + CH4MIN) * 0.5) * 2 / (CH4MAX - CH4MIN);
-      Pos_x_ref =  5* (float)(Chdata[1] - (CH2MAX + CH2MIN) * 0.5) * 2 / (CH2MAX - CH2MIN);
-    //not feedback
-      // Pos_x_ref2=  5*(float)(Chdata[1] - (CH1MAX + CH1MIN) * 0.5) * 2 / (CH1MAX - CH1MIN);
-      // Pos_y_ref2=  -5*(float)(Chdata[3] - (CH3MAX + CH3MIN) * 0.5) * 2 / (CH3MAX - CH3MIN);
-      Phi_ref =0.0;
-      Theta_ref=0.0;
+    if (Chdata[REDCIRCLE] > 500) {
+        // 位置目標値 [m]
+        Pos_y_ref = -3* (float)(Chdata[3]
+            - (CH4MAX + CH4MIN) * 0.5f) * 2.0f
+            / (CH4MAX - CH4MIN);
 
-    }
+        Pos_x_ref = 3* (float)(Chdata[1]
+            - (CH2MAX + CH2MIN) * 0.5f) * 2.0f
+            / (CH2MAX - CH2MIN);
+
+        Phi_ref = 0.0f;
+        Theta_ref = 0.0f;
+        }
     else{
       Pos_x_ref=0.0;
       Pos_y_ref=0.0;
-      // Pos_x_ref2=0.0;
-      // Pos_y_ref2=0.0;
+
 
       float Phi_trim =-M_PI/180.0;//-2*M_PI/180.0; 
       Phi_ref = Phi_trim + 0.8 * M_PI * (float)(Chdata[3] - (CH4MAX + CH4MIN) * 0.5) * 2 / (CH4MAX - CH4MIN);
@@ -988,8 +1027,8 @@ void angle_control(void)
       phi_err = Phi_ref - (Phi - Phi_bias);
       theta_err = Theta_ref - (Theta - Theta_bias);
       psi_err = Psi_ref - (Psi - Psi_bias);
-      pos_x_err = Pos_x_ref - x_flow;
-      pos_y_err = Pos_y_ref - y_flow;
+      // pos_x_err = Pos_x_ref - x_flow;
+      // pos_y_err = Pos_y_ref - y_flow;
 
       // Pref = Phi_ref;//phi_pid.update(phi_err);
       // Qref = Theta_ref;//theta_pid.update(theta_err);
@@ -997,9 +1036,12 @@ void angle_control(void)
       Pref = phi_pid.update(phi_err);
       Qref = theta_pid.update(theta_err);
       Rref = psi_pid.update(psi_err);
-      PoX_ref = x_pid.update(pos_x_err);
-      PoY_ref = y_pid.update(pos_y_err);
-
+    //位置入力値
+      // PoX_ref = x_pid.update(pos_x_err);
+      // PoY_ref = y_pid.update(pos_y_err);      
+    //速度入力値
+      PoX_ref =Pos_x_ref;
+      PoY_ref = Pos_y_ref;
       if (Flight_mode != LINETRACE)
       {
         Rref = Psi_ref;
@@ -1011,24 +1053,24 @@ void angle_control(void)
       }
     }
 
-       // saturation PoX_ref
-    if (PoX_ref >= (rate_limit * pi / 180))
-    {
-      PoX_ref = rate_limit * pi / 180;
-    }
-    else if (PoX_ref <= -(rate_limit * pi / 180))
-    {
-      PoX_ref = -(rate_limit * pi / 180);
-    }
+    //    // saturation PoX_ref
+    // if (PoX_ref >= (rate_limit * pi / 180))
+    // {
+    //   PoX_ref = rate_limit * pi / 180;
+    // }
+    // else if (PoX_ref <= -(rate_limit * pi / 180))
+    // {
+    //   PoX_ref = -(rate_limit * pi / 180);
+    // }
        // saturation PoY_ref
-    if (PoY_ref >= (rate_limit * pi / 180))
-    {
-      PoY_ref = rate_limit * pi / 180;
-    }
-    else if (PoY_ref <= -(rate_limit * pi / 180))
-    {
-      PoY_ref = -(rate_limit * pi / 180);
-    }
+    // if (PoY_ref >= (rate_limit * pi / 180))
+    // {
+    //   PoY_ref = rate_limit * pi / 180;
+    // }
+    // else if (PoY_ref <= -(rate_limit * pi / 180))
+    // {
+    //   PoY_ref = -(rate_limit * pi / 180);
+    // }
     // saturation Rref
     if (Rref >= (rate_limit * pi / 180))
     {
@@ -1159,6 +1201,9 @@ void logging(void)
       Logdata[LogdataCounter++] =p_rate;//48
       Logdata[LogdataCounter++] =q_rate;//49
       Logdata[LogdataCounter++] =r_rate;//50
+      Logdata[LogdataCounter++] =Vey_com;//51
+      Logdata[LogdataCounter++] =Vex_com;//52
+
     }
     else
       Logflag = 2;

@@ -535,11 +535,17 @@ void PMW3901::pmw3901_calculate_velocity_direct(int16_t delta_x, int16_t delta_y
     const float scale_factor = 0.0254f / 11.914f;
 
     //高度がmmのため1000で割る
-    *x_flow= -(scale_factor * (float)delta_x * altitude) / 1000;
-    *y_flow= -(scale_factor * (float)delta_y * altitude) / 1000;
+    // 今回の変位 [m]
+    float dx = (scale_factor * (float)delta_x * altitude) / 1000.0f;
+    float dy = (scale_factor * (float)delta_y * altitude) / 1000.0f;
 
-    *velocity_x = -(scale_factor * (float)delta_x * altitude) / dt / 1000;
-    *velocity_y = -(scale_factor * (float)delta_y * altitude) / dt / 1000;
+    // 累積変位 [m]
+    *x_flow += dx;
+    *y_flow += dy;
+
+    // 速度 [m/s]
+    *velocity_x = dx / dt;
+    *velocity_y = dy / dt;
 
 }
 
