@@ -9,6 +9,7 @@
 #include <unistd.h>
 #include <math.h>
 
+
 #define GRAV (9.80665)
 
 using Eigen::MatrixXd;
@@ -43,7 +44,13 @@ extern Matrix<float, 1,1> yn_mat;
 extern Matrix<float, 1 ,1> k_inv;
 extern Matrix<float, 1,1> mu_Yn_est_par;
 extern Matrix<float, 2,1> mu_Yn_est_par2;
+extern Matrix<float, 4, 4> flow_Q;
+extern Matrix<float, 2, 2> flow_R;
 extern float Xn_est_1,Xn_est_2,Xn_est_3,u;
+// Flow sensor Kalman filter
+extern Matrix<float, 4, 4> flow_F;
+extern Matrix<float, 4, 2> flow_B;
+extern Matrix<float, 2, 4> flow_H;
 extern float integral,integral_v,differential,differential_v;
 
 //Extended Kalman Filter
@@ -75,5 +82,13 @@ float initialize( Matrix<float, 2 ,2> &Sigma_Yn_est,
 float Kalman_PID(float observe_y,float Ax);
 float Kalman_holizontal(float camera_y,float camera_psi,float deltaP,float deltaR,float deltaPhi);
 float alt_PID(float ref_alt);
-void Kalman_init(void);           
+void Kalman_init(void);    
+void flow_kalman(
+    float x_raw,
+    float y_raw,
+    float& x_kalman,
+    float& y_kalman,
+    float& vx_kalman,
+    float& vy_kalman);
+       
 #endif

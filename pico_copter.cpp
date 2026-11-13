@@ -39,6 +39,8 @@ int main(void)
   variable_init();
   printf("#init cariavle\r\n");
 
+  flow_kalman_init();
+  
   //Initilize Control
   control_init();
   Kalman_init();

@@ -1506,6 +1506,7 @@ void output_sensor_raw_data(void)
   );                // 20
 }
 
+
 void kalman_filter(void)
 {
   // Kalman Filter
@@ -1515,20 +1516,54 @@ void kalman_filter(void)
   ekf(Xp, Xe, P, Z, Omega_m, Q, R, G * dt, Beta, dt);
 }
 
-////////////////////////力の計算式///////////////////////////////
-void flow_sensor(void){
 
-int16_t dx=0,dy=0;
+///////////////////////力の計算式///////////////////////////////
+void flow_sensor(void)
+{
+    int16_t dx=0,dy=0;
+    if (flow->readMotionBurst(&dx, &dy))
+    {
 
-    if (flow->readMotionBurst(&dx, &dy)) {
+        // PMW3901から変位・生速度を取得
+        flow->pmw3901_calculate_velocity_direct(
+            dx, dy, Kalman_alt, dt,
+            &x_flow, &y_flow, &vx, &vy
+        );
 
-        flow->pmw3901_calculate_velocity_direct(dx, dy, Kalman_alt, dt,&x_flow,&y_flow ,&vx, &vy);
-
-    //     static int cnt = 0;
-    // if (++cnt % 10 == 0) {
-    //   printf("dx=%d, dy=%d, alt=%f[m], dt=%f [s], vx=%f[m/s], vy=%f [m/s]\n",
-    //     dx, dy, Kalman_alt/1000, dt, vx, vy);        
-    //   }
+        // カルマンフィルタに入力
+    void flow_kalman(
+    float x_flow,
+    float y_flow,
+    float x_kalman,
+    float y_kalman,
+    float  vx_kalman,
+    float  vy_kalman);
     }
 }
 
+void flow_kalman_init(){
+  flow_F <<1,0,dt,0,
+           0,1,0,dt,
+           0,0,1,0,
+           0,0,0,1;
+
+  flow_B <<dt*dt*0.5,0,
+           0,dt*dt*0.5,
+           dt,0,
+           0,dt;
+
+  // 速度 Vx, Vy を観測する
+  flow_H <<1,0,0,0,
+           0,1,0,0;
+
+  flow_Q <<1,0,0,0,
+           0,1,0,0,
+           0,0,1,0,
+           0,0,0,1;
+
+  flow_R <<1,0,
+           0,1;
+  flow_est.setZero();
+  flow_P_est.setIdentity();
+
+}

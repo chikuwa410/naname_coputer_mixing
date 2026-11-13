@@ -545,7 +545,7 @@ uint8_t F_jacobian( Matrix<float, 7, 7>&F,
   F(5, 2)= 0.0;
   F(5, 3)= 0.0;
   F(5, 4)= 0.0;
-  F(5, 5)= 1.0 - betay*dt;
+  F(5, 5)=1.0 - betay*dt;
   F(5, 6)= 0.0;
   
   //x(6, 0) = dr -betaz*dr*dt;
@@ -678,4 +678,77 @@ uint8_t ekf( Matrix<float, 7, 1> &xe,
 
 
   return 0;
+}
+
+//flowセンサ　kalman
+
+// flowセンサ Kalman Filter
+
+Matrix<float, 4, 4> flow_F = MatrixXf::Zero(4,4);
+Matrix<float, 4, 2> flow_B = MatrixXf::Zero(4,2);
+Matrix<float, 2, 4> flow_H = MatrixXf::Zero(2,4);
+
+Matrix<float, 4, 1> flow_pre = MatrixXf::Zero(4,1);
+Matrix<float, 4, 1> flow_est = MatrixXf::Zero(4,1);
+
+Matrix<float, 4, 4> flow_P_pre = MatrixXf::Zero(4,4);
+Matrix<float, 4, 4> flow_P_est = MatrixXf::Zero(4,4);
+
+Matrix<float, 4, 2> flow_K = MatrixXf::Zero(4,2);
+
+Matrix<float, 2, 1> flow_z = MatrixXf::Zero(2,1);
+Matrix<float, 2, 1> flow_y = MatrixXf::Zero(2,1);
+
+Matrix<float, 2, 2> flow_S = MatrixXf::Zero(2,2);
+Matrix<float, 4, 4> flow_Q = MatrixXf::Zero(4,4);
+Matrix<float, 2, 2> flow_R = MatrixXf::Zero(2,2);
+
+void flow_kalman(
+    float x_raw,
+    float y_raw,
+    float& x_kalman,
+    float& y_kalman,
+    float& vx_kalman,
+    float& vy_kalman)
+{
+    flow_z(0,0) = x_raw;
+    flow_z(1,0) = y_raw;
+
+    // 制御入力（加速度）：今回はゼロ
+    Matrix<float,2,1> u;
+    u.setZero();
+
+    // 予測ステップ
+    flow_pre = flow_F * flow_est + flow_B * u;
+
+    flow_P_pre =
+        flow_F * flow_P_est * flow_F.transpose() + flow_Q;
+
+    // 更新ステップ
+    flow_y = flow_z - flow_H * flow_pre;
+
+    flow_S =
+        flow_H * flow_P_pre * flow_H.transpose() + flow_R;
+
+    flow_K =
+        flow_P_pre * flow_H.transpose() * flow_S.inverse();
+
+    flow_est = flow_pre + flow_K * flow_y;
+
+    // 共分散更新
+    Matrix<float,4,4> I;
+    I.setIdentity();
+
+    Matrix<float,4,4> M;
+    M = I - flow_K * flow_H;
+
+    flow_P_est =
+        M * flow_P_pre * M.transpose()
+        + flow_K * flow_R * flow_K.transpose();
+
+    // 推定値の出力
+    x_kalman  = flow_est(0,0);
+    y_kalman  = flow_est(1,0);
+    vx_kalman = flow_est(2,0);
+    vy_kalman = flow_est(3,0);
 }

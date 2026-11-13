@@ -41,7 +41,7 @@ void variable_init(void);
 void log_output(void);
 void rgbled_nomal(void);
 void rgbled_off(void);
-
+void flow_kalman_init(void);
 //グローバル変数
 extern uint8_t LockMode;
 extern volatile uint8_t Logoutputflag;
@@ -52,9 +52,9 @@ extern float z_acc;
 extern float func_time;
 extern float T_ref;
 extern uint64_t count_up;
-
-
-
+// カルマンフィルタの状態変数（宣言のみ）
+extern Matrix<float, 4, 1> flow_est;
+extern Matrix<float, 4, 4> flow_P_est;
 //グローバル変数
 extern uint8_t LockMode;
 extern volatile uint8_t Logoutputflag;
